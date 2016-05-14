@@ -71,10 +71,10 @@ body {
   height: 26px;
   width: 200px;
   border-radius: 4px 0px 0px 4px;
-  border-top:1px solid #888;
-  border-left:1px solid #888;
+  border-top:1px solid #669;
+  border-left:1px solid #669;
   border-right:none;
-  border-bottom:1px solid #888;
+  border-bottom:1px solid #669;
   float:left;
   color: #888;
   padding-left:8px;
@@ -93,9 +93,9 @@ body {
 #searchMap {
   background: #009de1;
   height: 30px;
-  border-top:1px solid #888;
-  border-right:1px solid #888;
-  border-bottom:1px solid #888;
+  border-top:1px solid #669;
+  border-right:1px solid #669;
+  border-bottom:1px solid #669;
   border-left:none;
   border-radius: 0px 4px 4px 0px;
   transition: background 0.2s ease;
@@ -113,7 +113,7 @@ body {
 #localMap {
   background: #009de1;
   height: 30px;
-  border: 1px solid #888;
+  border: 1px solid #669;
   border-radius: 4px;
   transition: background 0.2s ease;
   float:left;
@@ -133,7 +133,7 @@ body {
   font-size: 12px;
   border-radius: 4px;
   float:right;
-  border:1px solid #888;
+  border:1px solid #669;
   list-style: none;
   margin-top:0px;
   padding-left:0px;
@@ -151,7 +151,7 @@ body {
 }
 
 #helper {
-    border-left: 1px solid #888;
+    border-left: 1px solid #669;
     margin-left:-4px;
 }
 
