@@ -63,17 +63,17 @@
             "fillColor": "#ffffff"
         };
         //Coordenadas salvas em uma variável para limitar a área de visualização do mapa
-        var southWest = L.latLng(-7.18384, -34.87593),
-            northEast = L.latLng(-7.10379, -34.76658),
+        var southWest = L.latLng(-7.145, -34.855),
+            northEast = L.latLng(-7.129, -34.84),
             bounds = L.latLngBounds(southWest, northEast);
         //Inicialização do mapa e limitando a área de visualização do mapa com a variável bounds
         L.mapbox.accessToken = 'pk.eyJ1IjoiMTJoYXZlbnNsYXYiLCJhIjoiY2lrcXUzajI4MDA5cHZlbTNoOGs4cHk1byJ9.YKesU01czArkvWBSXzj1iA';
         var map = L.mapbox.map('map', 'mapbox.streets', {
                 maxBounds: bounds,
-                maxZoom: 25,
-                minZoom: 14
+                maxZoom: 19,
+                minZoom: 17
             })
-            .setView([-7.136664, -34.845972], 15);
+            .setView([-7.1383, -34.855972], 15);
         // Código para utilização das tiles do Mapbox
         // (new L.TileLayer('http://otile4.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', { MAPBOX
             (new L.TileLayer('http://otile1.mqcdn.com/tiles/1.0.0/osm', {
@@ -97,81 +97,7 @@
             iconUrl: 'images/trans.png'
         });
         //Adicionar os edifícios salvos em variáveis no data2.js através do GeoJSON. Cada edifício tem uma variável diferente e, graças a isso, abrirá um popup diferente que está definido no popups.js
-        new L.geoJson(CTBlocoJ, {
-            style: hidden
-        }).bindLabel('Bloco J - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoJ_pop, (autopad));
-        new L.geoJson(CAEngenhariaMecanica, {
-            style: hidden
-        }).bindLabel('CA de Engenharia Mecânica').addTo(map).bindPopup(CAEngenhariaMecanica_pop, (autopad));
-        new L.geoJson(CAEngenhariaCivil, {
-            style: hidden
-        }).bindLabel('CA de Engenharia Civil').addTo(map).bindPopup(CAEngenhariaCivil_pop, (autopad));
-        new L.geoJson(LabAnaliseAlimentos, {
-            style: hidden
-        }).bindLabel('Laboratório de Análise de Alimentos').addTo(map).bindPopup(LabAnaliseAlimentos_pop, (autopad));
-        new L.geoJson(LabEficienciaEnergeticaHidraulica, {
-            style: hidden
-        }).bindLabel('Laboratório de Eficiência Energética e Hidráulica em Saneamento').addTo(map).bindPopup(LabEficienciaEnergeticaHidraulica_pop, (autopad));
-        new L.geoJson(CTBlocoA, {
-            style: hidden
-        }).bindLabel('Bloco A - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoA_pop, (autopad));
-        new L.geoJson(CTBlocoB, {
-            style: hidden
-        }).bindLabel('Bloco B - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoB_pop, (autopad));
-        new L.geoJson(CTBlocoC, {
-            style: hidden
-        }).bindLabel('Bloco C - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoC_pop, (autopad));
-        new L.geoJson(CTBlocoD, {
-            style: hidden
-        }).bindLabel('Bloco D - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoD_pop, (autopad));
-        new L.geoJson(CTBlocoE, {
-            style: hidden
-        }).bindLabel('Bloco E - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoE_pop, (autopad));
-        new L.geoJson(CTBlocoFG, {
-            style: hidden
-        }).bindLabel('Blocos F e G - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoFG_pop, (autopad));
-        new L.geoJson(CTBlocoH, {
-            style: hidden
-        }).bindLabel('Bloco H - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoH_pop, (autopad));
-        new L.geoJson(CTBlocoK, {
-            style: hidden
-        }).bindLabel('Bloco K - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoK_pop, (autopad));
-        new L.geoJson(CTBlocoL, {
-            style: hidden
-        }).bindLabel('Bloco L - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoL_pop, (autopad));
-        new L.geoJson(CTBlocoM, {
-            style: hidden
-        }).bindLabel('Bloco M - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoM_pop, (autopad));
-        new L.geoJson(CTBlocoN, {
-            style: hidden
-        }).bindLabel('Bloco N - Centro de Tecnologia').addTo(map).bindPopup(CTBlocoN_pop, (autopad));
-        new L.geoJson(CTBibliotecaSetorial, {
-            style: hidden
-        }).bindLabel('Biblioteca Setorial - Centro de Tecnologia').addTo(map).bindPopup(CTBibliotecaSetorial_pop, (autopad));
-        new L.geoJson(LabEnsaioMateriais, {
-            style: hidden
-        }).bindLabel('Laboratório de Ensaio de Materiais e Estruturas').addTo(map).bindPopup(LabEnsaioMateriais_pop, (autopad));
-        new L.geoJson(LabPPHL, {
-            style: hidden
-        }).bindLabel('Laboratório PPHL').addTo(map).bindPopup(LabPPHL_pop, (autopad));
-        new L.geoJson(PredioEngenhariaEletrica, {
-            style: hidden
-        }).bindLabel('Prédio de Engenharia Elétrica').addTo(map).bindPopup(PredioEngenhariaEletrica_pop, (autopad));
-        new L.geoJson(CTCentroMultimidia, {
-            style: hidden
-        }).bindLabel('Centro Multimídia - Centro de Tecnologia').addTo(map).bindPopup(CTCentroMultimidia_pop, (autopad));
-        new L.geoJson(CTCentroAdministrativo, {
-            style: hidden
-        }).bindLabel('Centro Administrativo - Centro de Tecnologia').addTo(map).bindPopup(CTCentroAdministrativo_pop, (autopad));
-        new L.geoJson(CTAmbienteProfessores, {
-            style: hidden
-        }).bindLabel('Ambiente dos Professores - Centro de Tecnologia').addTo(map).bindPopup(CTAmbienteProfessores_pop, (autopad));
-        new L.geoJson(LabDesativado, {
-            style: hidden
-        }).bindLabel('Laboratório Desativado - Centro de Tecnologia').addTo(map).bindPopup(LabDesativado_pop, (autopad));
-        new L.geoJson(LabFechado, {
-            style: hidden
-        }).bindLabel('Laboratório Fechado - Centro de Tecnologia').addTo(map).bindPopup(LabFechado_pop, (autopad));
+
         new L.geoJson(PredioCCHLA, {
             style: hidden
         }).bindLabel('Prédio - CCHLA').addTo(map).bindPopup(PredioCCHLA_pop, (autopad));
@@ -181,66 +107,19 @@
         new L.geoJson(CCSABloco2, {
             style: hidden
         }).bindLabel('CCSA - Bloco 2').addTo(map).bindPopup(CCSABloco2_pop, (autopad));
-        new L.geoJson(CAPredio01, {
-            style: hidden
-        }).bindLabel('CA - Predio 01').addTo(map).bindPopup(CAPredio01_pop, (autopad));
-        new L.geoJson(CAPredio02, {
-            style: hidden
-        }).bindLabel('CA - Predio 02').addTo(map).bindPopup(CAPredio02_pop, (autopad));
-         new L.geoJson(CAPredio03, {
-            style: hidden
-        }).bindLabel('CA - Predio 03').addTo(map).bindPopup(CAPredio03_pop, (autopad));
-         new L.geoJson(CAPredio04, {
-            style: hidden
-        }).bindLabel('CA - Predio 04').addTo(map).bindPopup(CAPredio04_pop, (autopad));
-         new L.geoJson(CAPredio05, {
-            style: hidden
-        }).bindLabel('CA - Predio 05').addTo(map).bindPopup(CAPredio05_pop, (autopad));
-         new L.geoJson(CAPredio06, {
-            style: hidden
-        }).bindLabel('CA - Predio 06').addTo(map).bindPopup(CAPredio06_pop, (autopad));
-          new L.geoJson(CAPredio07, {
-            style: hidden
-        }).bindLabel('CA - Predio 07').addTo(map).bindPopup(CAPredio07_pop, (autopad));
-          new L.geoJson(CAPredio08, {
-            style: hidden
-        }).bindLabel('CA - Predio 08').addTo(map).bindPopup(CAPredio08_pop, (autopad));
-          new L.geoJson(CAPredio09, {
-            style: hidden
-        }).bindLabel('CA - Predio 09').addTo(map).bindPopup(CAPredio09_pop, (autopad));
-          new L.geoJson(CCJ, {
-            style: hidden
-        }).bindLabel('CCJ - Centro de Ciências Jurídicas').addTo(map).bindPopup(CCJ_pop, (autopad));
-          new L.geoJson(DEMID, {
+        new L.geoJson(DEMID, {
             style: hidden
         }).bindLabel('DEMID - Departamento de Mídias Digitais').addTo(map).bindPopup(DEMID_pop, (autopad));
-           new L.geoJson(Reitoria, {
-            style: hidden
-        }).bindLabel('Reitoria').addTo(map).bindPopup(Reitoria_pop, (autopad));
-           new L.geoJson(HU, {
-            style: hidden
-        }).bindLabel('HU - Hospital Universitário').addTo(map).bindPopup(HU_pop, (autopad));
-            new L.geoJson(Biblioteca, {
-            style: hidden
-        }).bindLabel('Biblioteca Central UFPB').addTo(map).bindPopup(Biblioteca_pop, (autopad));
-             new L.geoJson(CEBloco1, {
+        new L.geoJson(CEBloco1, {
             style: hidden
         }).bindLabel('CE - Bloco 1').addTo(map).bindPopup(CEBloco1_pop, (autopad));
-             new L.geoJson(CEBloco2, {
+        new L.geoJson(CEBloco2, {
             style: hidden
         }).bindLabel('CE - Bloco 2').addTo(map).bindPopup(CEBloco2_pop, (autopad));
-             new L.geoJson(CEBloco3, {
+        new L.geoJson(CEBloco3, {
             style: hidden
         }).bindLabel('CE - Bloco 3').addTo(map).bindPopup(CEBloco3_pop, (autopad));
-             new L.geoJson(CCEN, {
-            style: hidden
-        }).bindLabel('CCEN').addTo(map).bindPopup(CCEN_pop, (autopad));
-             new L.geoJson(ResidenciaPredio01, {
-            style: hidden
-        }).bindLabel('Residencia Universitária').addTo(map).bindPopup(ResidenciaPredio1_pop, (autopad));
-              new L.geoJson(ResidenciaPredio02, {
-            style: hidden
-        }).bindLabel('Residencia Universitária').addTo(map).bindPopup(ResidenciaPredio2_pop, (autopad));
+
     </script>
 </body>
 </html>
