@@ -74,7 +74,7 @@
                 maxZoom: 19,
                 minZoom: 17
             })
-            .setView([-7.1389, -34.865972], 15);
+            .setView([-7.1402, -34.8505], 18);
         // Código para utilização das tiles do Mapbox
         // (new L.TileLayer('http://otile4.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', { MAPBOX
             (new L.TileLayer('http://otile1.mqcdn.com/tiles/1.0.0/osm', {
@@ -99,7 +99,7 @@
         });
         //Adicionar os edifícios salvos em variáveis no data2.js através do GeoJSON. Cada edifício tem uma variável diferente e, graças a isso, abrirá um popup diferente que está definido no popups.js
 
-        new L.geoJson(PredioCCHLA, {
+    /*    new L.geoJson(PredioCCHLA, {
             style: hidden
         }).bindLabel('Prédio - CCHLA').addTo(map).bindPopup(PredioCCHLA_pop, (autopad));
         new L.geoJson(CCSABloco1, {
@@ -107,11 +107,11 @@
         }).bindLabel('CCSA - Bloco 1').addTo(map).bindPopup(CCSABloco1_pop, (autopad));
         new L.geoJson(CCSABloco2, {
             style: hidden
-        }).bindLabel('CCSA - Bloco 2').addTo(map).bindPopup(CCSABloco2_pop, (autopad));
+        }).bindLabel('CCSA - Bloco 2').addTo(map).bindPopup(CCSABloco2_pop, (autopad)); */
         new L.geoJson(DEMID, {
             style: hidden
         }).bindLabel('DEMID - Departamento de Mídias Digitais').addTo(map).bindPopup(DEMID_pop, (autopad));
-        new L.geoJson(CEBloco1, {
+    /*    new L.geoJson(CEBloco1, {
             style: hidden
         }).bindLabel('CE - Bloco 1').addTo(map).bindPopup(CEBloco1_pop, (autopad));
         new L.geoJson(CEBloco2, {
@@ -119,7 +119,7 @@
         }).bindLabel('CE - Bloco 2').addTo(map).bindPopup(CEBloco2_pop, (autopad));
         new L.geoJson(CEBloco3, {
             style: hidden
-        }).bindLabel('CE - Bloco 3').addTo(map).bindPopup(CEBloco3_pop, (autopad));
+        }).bindLabel('CE - Bloco 3').addTo(map).bindPopup(CEBloco3_pop, (autopad)); */
         new L.geoJson(BlocoA, {
             style: hidden
         }).bindLabel('Bloco A').addTo(map).bindPopup(BlocoA_pop, (autopad));
@@ -144,7 +144,7 @@
         new L.geoJson(BlocoH, {
             style: hidden
         }).bindLabel('Bloco H').addTo(map).bindPopup(BlocoH_pop, (autopad));
-        new L.geoJson(BlocoI, {
+        /* new L.geoJson(BlocoI, { 
             style: hidden
         }).bindLabel('Bloco I').addTo(map).bindPopup(BlocoI_pop, (autopad));
         new L.geoJson(BlocoJ, {
@@ -152,7 +152,7 @@
         }).bindLabel('Bloco J').addTo(map).bindPopup(BlocoJ_pop, (autopad));
         new L.geoJson(BlocoK, {
             style: hidden
-        }).bindLabel('Bloco K').addTo(map).bindPopup(BlocoK_pop, (autopad));
+        }).bindLabel('Bloco K').addTo(map).bindPopup(BlocoK_pop, (autopad)); */
         new L.geoJson(BlocoL, {
             style: hidden
         }).bindLabel('Bloco L').addTo(map).bindPopup(BlocoL_pop, (autopad));

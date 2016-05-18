@@ -3,7 +3,7 @@
 var data = {
   type: "FeatureCollection",
   features: [
-    {
+  /*  {
       type: "Feature",
       name: "CCSA Bloco1",
       properties: {
@@ -53,7 +53,7 @@ var data = {
           ]
         ]
       }
-    },
+    }, */
 
     {
       type: "Feature",
@@ -77,7 +77,7 @@ var data = {
       }
     },
 
-    {
+/*    {
       type: "Feature",
       name: "CE - Cento de Educação, Bloco 1",
       properties: {
@@ -145,9 +145,9 @@ var data = {
           ]
         ]
       }
-    },
+    }, */
 
-    {
+/*    {
       type: "Feature",
       name: "Bloco R",
       properties: {
@@ -304,7 +304,7 @@ var data = {
           ]
         ]
       }
-    },
+    }, */
 
 
     {
@@ -461,7 +461,7 @@ var data = {
     },
 
 
-    {
+/*    {
       type: "Feature",
       name: "Bloco K",
       properties: {
@@ -588,7 +588,7 @@ var data = {
           ]
         ]
       }
-    },
+    }, */
 
 
     {
@@ -664,7 +664,7 @@ var data = {
           ]
         ]
       }
-    },
+    }, 
 
 
     {
@@ -954,7 +954,7 @@ var data = {
       }
     },
 
-    {
+/*    {
       type: "Feature",
       name: "PredioCCHLA",
       properties: {
@@ -974,6 +974,8 @@ var data = {
           ]
         ]
       }
-    }
+    } */
+
+
   ]
 }
