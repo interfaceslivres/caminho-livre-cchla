@@ -15,6 +15,10 @@
     <!-- Nossa folha de estilos personalizada -->
     <link href='css/jquery-ui.min.css' rel='stylesheet' />
     <!-- CSS Padrão do jquery-ui | Utilizamos o jquery-ui para a função de autocomplete -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Fonte para a geolocalização -->
+    <link rel="stylesheet" href="css/L.Control.Locate.mapbox.min.css" />
+    <!-- Estilo da geolocalização -->
     <!-- JS -->
     <script src="js/leaflet.js"></script>
     <!-- JS Padrão do Leaflet [Necessário] -->
@@ -36,6 +40,8 @@
     <!-- JS contendo as informações relacionadas à caixa de pesquisa -->
     <script src='js/jquery-ui.min.js'></script>
     <!-- JS Padrão do JQuery UI -->
+    <script src="js/L.Control.Locate.min.js" charset="utf-8"></script>
+    <!-- JS da geolocalização -->
 </head>
 
 <body>
@@ -80,19 +86,32 @@
             (new L.TileLayer('http://otile1.mqcdn.com/tiles/1.0.0/osm', {
             minZoom: 15
         }, {})).addTo(map);
+        // Adicionar botão de geolocalização
+        L.control.locate().addTo(map);
         //Condição para aplicação do OSMBuildings apenas se o tamanho da tela for maior que o especificado
         // COMENTADO - Condição para omitir OSMBuildings em mobile if ($(window).width() > 850) {         } else {}
             //Adicionar os edifícios 2.5D aos polígonos especificados no data.js
             new OSMBuildings(map).set(data);
+        //Criar icone
+        var iconePano = L.icon({
+            iconUrl: '360degrees.png',
+            //shadowUrl: 'leaf-shadow.png',
+
+            iconSize:     [32, 37], // size of the icon
+            shadowSize:   [50, 64], // size of the shadow
+            iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+            shadowAnchor: [4, 62],  // the same for the shadow
+            popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+        });
         //Isso é um teste do PANNELLUM - Virtual Tour 360º
-        var marker = L.marker([-7.136318, -34.845205]).addTo(map);
-        marker.bindPopup('<iframe width="700" height="400" allowfullscreen style="border-style:none;" src="http://localhost/pannellum/pannellum.htm?panorama=http://localhost/pannellum/pano2.jpg&amp;title=Montanha&amp;preview=http://localhost/pannellum/panopreview.jpg"></iframe>');
+        var reitoriaicon = L.marker([-7.136318, -34.845205], {icon: iconePano}).addTo(map);
+        reitoriaicon.bindPopup('<iframe width="700" height="400" allowfullscreen style="border-style:none;" src="http://localhost/pannellum/pannellum.htm?panorama=http://localhost/pannellum/pano2.jpg&amp;title=Montanha&amp;preview=http://localhost/pannellum/panopreview.jpg"></iframe>');
         //Estilo para autopadding dos popups
         var autopad = {
                 autoPanPaddingBottomRight: [50, 50],
                 autoPanPaddingTopLeft: [50, 120]
             }
-            //Adicionar os marcadores transparentes. Eles servem para a função de pesquisa.
+        //Adicionar os marcadores transparentes. Eles servem para a função de pesquisa.
         var transIcon = L.Icon.extend({});
         var transmarker = new transIcon({
             iconUrl: 'images/trans.png'
