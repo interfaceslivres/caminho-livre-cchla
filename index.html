@@ -11,14 +11,14 @@
     <!-- CSS Padrão do Mapbox [Necessário] | O mapbox permite utilização de funções no mapa e define o estilo dele -->
     <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
     <!-- CSS Padrão do Leaflet Label | Permite a criação de labels por hover em cima dos edifícios -->
-    <link href='css/style.css' rel='stylesheet' />
-    <!-- Nossa folha de estilos personalizada -->
     <link href='css/jquery-ui.min.css' rel='stylesheet' />
     <!-- CSS Padrão do jquery-ui | Utilizamos o jquery-ui para a função de autocomplete -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Fonte para a geolocalização -->
     <link rel="stylesheet" href="css/L.Control.Locate.mapbox.min.css" />
     <!-- Estilo da geolocalização -->
+    <link href='css/style.css' rel='stylesheet' />
+    <!-- Nossa folha de estilos personalizada -->
     <!-- JS -->
     <script src="js/leaflet.js"></script>
     <!-- JS Padrão do Leaflet [Necessário] -->
@@ -118,13 +118,13 @@
         });
         //Adicionar os edifícios salvos em variáveis no data2.js através do GeoJSON. Cada edifício tem uma variável diferente e, graças a isso, abrirá um popup diferente que está definido no popups.js
 
-    /*    new L.geoJson(PredioCCHLA, {
+        new L.geoJson(PredioCCHLA, {
             style: hidden
         }).bindLabel('Prédio - CCHLA').addTo(map).bindPopup(PredioCCHLA_pop, (autopad));
         new L.geoJson(CCSABloco1, {
             style: hidden
         }).bindLabel('CCSA - Bloco 1').addTo(map).bindPopup(CCSABloco1_pop, (autopad));
-        new L.geoJson(CCSABloco2, {
+    /*    new L.geoJson(CCSABloco2, {
             style: hidden
         }).bindLabel('CCSA - Bloco 2').addTo(map).bindPopup(CCSABloco2_pop, (autopad)); */
         new L.geoJson(DEMID, {

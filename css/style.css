@@ -46,6 +46,15 @@
 	top: 70px !important;
 }
 
+.leaflet-bar a, .leaflet-bar a:hover {
+  background: #009de1;
+  border-radius:0px;
+}
+
+.leaflet-left .leaflet-control {
+  margin-left: 20px;
+}
+
 /* ------------- header ------------- */
 
 body {
