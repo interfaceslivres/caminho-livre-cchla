@@ -47,12 +47,20 @@
 }
 
 .leaflet-bar a, .leaflet-bar a:hover {
-  background: #009de1;
-  border-radius:0px;
+
 }
 
 .leaflet-left .leaflet-control {
   margin-left: 20px;
+  border: 1px solid #333;
+  border-radius:4.5px;
+}
+
+.leaflet-control-locate a {
+  background: url('../images/bg-local.png');
+  border-radius:0px;
+  border: 0px solid #009de1;
+  padding: 14px;
 }
 
 /* ------------- header ------------- */
