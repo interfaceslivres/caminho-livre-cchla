@@ -116,13 +116,13 @@
         });
         //Adicionar os edifícios salvos em variáveis no data2.js através do GeoJSON. Cada edifício tem uma variável diferente e, graças a isso, abrirá um popup diferente que está definido no popups.js
 
-        new L.geoJson(PredioCCHLA, {
+        new L.geoJson(Ambiente2, {
             style: hidden
-        }).bindLabel('Prédio - CCHLA').addTo(map).bindPopup(PredioCCHLA_pop, (autopad));
-        new L.geoJson(CCSABloco1, {
+        }).bindLabel('Ambiente dos Professores II').addTo(map).bindPopup(Ambiente2_pop, (autopad));
+    /*    new L.geoJson(CCSABloco1, {
             style: hidden
         }).bindLabel('CCSA - Bloco 1').addTo(map).bindPopup(CCSABloco1_pop, (autopad));
-    /*    new L.geoJson(CCSABloco2, {
+        new L.geoJson(CCSABloco2, {
             style: hidden
         }).bindLabel('CCSA - Bloco 2').addTo(map).bindPopup(CCSABloco2_pop, (autopad)); */
         new L.geoJson(DEMID, {
@@ -137,30 +137,30 @@
         new L.geoJson(CEBloco3, {
             style: hidden
         }).bindLabel('CE - Bloco 3').addTo(map).bindPopup(CEBloco3_pop, (autopad)); */
-        new L.geoJson(BlocoA, {
+        new L.geoJson(BlocoV, {
             style: hidden
-        }).bindLabel('Bloco A').addTo(map).bindPopup(BlocoA_pop, (autopad));
-        new L.geoJson(BlocoB, {
+        }).bindLabel('Bloco V').addTo(map).bindPopup(BlocoV_pop, (autopad));
+        new L.geoJson(Praca, {
             style: hidden
-        }).bindLabel('Bloco B').addTo(map).bindPopup(BlocoB_pop, (autopad));
+        }).bindLabel('Ambiente dos Professores / Praça da Alegria').addTo(map).bindPopup(Praca_pop, (autopad));
+        new L.geoJson(BlocoIV, {
+            style: hidden
+        }).bindLabel('Bloco IV').addTo(map).bindPopup(BlocoIV_pop, (autopad));
+        /* new L.geoJson(BlocoD, {
+            style: hidden
+        }).bindLabel('Bloco D').addTo(map).bindPopup(BlocoD_pop, (autopad)); */
+        new L.geoJson(BlocoPsico, {
+            style: hidden
+        }).bindLabel('Bloco de Psicologia').addTo(map).bindPopup(BlocoPsico_pop, (autopad));
         new L.geoJson(BlocoC, {
             style: hidden
         }).bindLabel('Bloco C').addTo(map).bindPopup(BlocoC_pop, (autopad));
-        new L.geoJson(BlocoD, {
+        new L.geoJson(Auditorios, {
             style: hidden
-        }).bindLabel('Bloco D').addTo(map).bindPopup(BlocoD_pop, (autopad));
-        new L.geoJson(BlocoE, {
+        }).bindLabel('Auditórios 411 e 412').addTo(map).bindPopup(Auditorios_pop, (autopad));
+        new L.geoJson(BlocoA, {
             style: hidden
-        }).bindLabel('Bloco E').addTo(map).bindPopup(BlocoE_pop, (autopad));
-        new L.geoJson(BlocoF, {
-            style: hidden
-        }).bindLabel('Bloco F').addTo(map).bindPopup(BlocoF_pop, (autopad));
-        new L.geoJson(BlocoG, {
-            style: hidden
-        }).bindLabel('Bloco G').addTo(map).bindPopup(BlocoG_pop, (autopad));
-        new L.geoJson(BlocoH, {
-            style: hidden
-        }).bindLabel('Bloco H').addTo(map).bindPopup(BlocoH_pop, (autopad));
+        }).bindLabel('Bloco A').addTo(map).bindPopup(BlocoA_pop, (autopad));
         /* new L.geoJson(BlocoI, { 
             style: hidden
         }).bindLabel('Bloco I').addTo(map).bindPopup(BlocoI_pop, (autopad));
@@ -170,15 +170,15 @@
         new L.geoJson(BlocoK, {
             style: hidden
         }).bindLabel('Bloco K').addTo(map).bindPopup(BlocoK_pop, (autopad)); */
-        new L.geoJson(BlocoL, {
+        new L.geoJson(BibliotecaSetorial, {
             style: hidden
-        }).bindLabel('Bloco L').addTo(map).bindPopup(BlocoL_pop, (autopad));
-        new L.geoJson(BlocoM, {
+        }).bindLabel('Biblioteca Setorial').addTo(map).bindPopup(BibliotecaSetorial_pop, (autopad));
+        new L.geoJson(ClinicaPsicologia, {
             style: hidden
-        }).bindLabel('Bloco M').addTo(map).bindPopup(BlocoM_pop, (autopad));
-        new L.geoJson(BlocoN, {
+        }).bindLabel('Clínica de Psicologia').addTo(map).bindPopup(ClinicaPsicologia_pop, (autopad));
+        new L.geoJson(CAs, {
             style: hidden
-        }).bindLabel('Bloco N').addTo(map).bindPopup(BlocoN_pop, (autopad));
+        }).bindLabel('CAs').addTo(map).bindPopup(CAs_pop, (autopad));
         new L.geoJson(BlocoO, {
             style: hidden
         }).bindLabel('Bloco O').addTo(map).bindPopup(BlocoO_pop, (autopad));

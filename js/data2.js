@@ -1,4 +1,4 @@
-var PredioCCHLA = {
+var Ambiente2 = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",
@@ -186,7 +186,7 @@ var CEBloco3 = {
    }]
 };
 
-var BlocoA = {
+var BlocoV = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",
@@ -238,7 +238,7 @@ var BlocoA = {
 };
 
 
-var BlocoB = {
+var Praca = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",
@@ -273,7 +273,7 @@ var BlocoB = {
    }]
 };
 
-var BlocoC = {
+var BlocoIV = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",
@@ -324,7 +324,7 @@ var BlocoC = {
    }]
 };
 
-var BlocoD = {
+/* var BlocoD = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",
@@ -357,9 +357,9 @@ var BlocoD = {
         ]
       }
    }]
-};
+}; */
 
-var BlocoE = {
+var BlocoPsico = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",
@@ -394,7 +394,7 @@ var BlocoE = {
    }]
 };
 
-var BlocoF = {
+var BlocoC = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",
@@ -430,7 +430,7 @@ var BlocoF = {
 };
 
 
-var BlocoG = {
+var Auditorios = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",
@@ -465,7 +465,7 @@ var BlocoG = {
    }]
 };
 
-var BlocoH = {
+var BlocoA = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",
@@ -621,7 +621,7 @@ var BlocoK = {
    }]
 };
 
-var BlocoL = {
+var BibliotecaSetorial = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",
@@ -696,7 +696,7 @@ var BlocoL = {
    }]
 };
 
-var BlocoM = {
+var ClinicaPsicologia = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",
@@ -771,7 +771,7 @@ var BlocoM = {
    }]
 };
 
-var BlocoN = {
+var CAs = {
   type: "FeatureCollection",
   features: [{
       type: "Feature",

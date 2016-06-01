@@ -3,7 +3,7 @@
 var data = {
   type: "FeatureCollection",
   features: [
-  {
+/*  {
       type: "Feature",
       name: "CCSA Bloco1",
       properties: {
@@ -39,7 +39,7 @@ var data = {
         ]
       }
     },
-/*
+
     {
       type: "Feature",
       name: "CCSA Bloco2",
@@ -324,7 +324,7 @@ var data = {
 
     {
       type: "Feature",
-      name: "Bloco N",
+      name: "CAs",
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
@@ -378,7 +378,7 @@ var data = {
 
     {
       type: "Feature",
-      name: "Bloco M",
+      name: "Clínica de Psicologia",
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
@@ -456,7 +456,7 @@ var data = {
 
     {
       type: "Feature",
-      name: "Bloco L",
+      name: "Biblioteca Setorial",
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
@@ -664,7 +664,7 @@ var data = {
 
     {
       type: "Feature",
-      name: "Bloco H",
+      name: "Bloco A",
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
@@ -702,7 +702,7 @@ var data = {
 
     {
       type: "Feature",
-      name: "Bloco G",
+      name: "Auditórios 411 e 412",
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
@@ -740,7 +740,7 @@ var data = {
 
     {
       type: "Feature",
-      name: "Bloco F",
+      name: "Bloco C",
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
@@ -777,7 +777,7 @@ var data = {
 
     {
       type: "Feature",
-      name: "Bloco E",
+      name: "Bloco de Psicologia",
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
@@ -812,7 +812,7 @@ var data = {
       }
     },
 
-    {
+   /* {
       type: "Feature",
       name: "Bloco D",
       properties: {
@@ -848,10 +848,10 @@ var data = {
         ]
       }
     },
-
+  */
     {
       type: "Feature",
-      name: "Bloco C",
+      name: "Bloco IV",
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
@@ -905,7 +905,7 @@ var data = {
 
     {
       type: "Feature",
-      name: "Bloco B",
+      name: "Ambiente dos Professores / Praça da Alegria",
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
@@ -942,7 +942,7 @@ var data = {
 
     {
       type: "Feature",
-      name: "Bloco A",
+      name: "Bloco V",
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
@@ -995,7 +995,7 @@ var data = {
 
     {
       type: "Feature",
-      name: "PredioCCHLA",
+      name: "Ambiente dos Professores II",
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
