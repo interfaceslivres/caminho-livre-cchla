@@ -50,6 +50,10 @@
 
 }
 
+.leaflet-bar {
+    margin-top: 30px;
+}
+
 .leaflet-left .leaflet-control {
   margin-left: 20px;
   border: 1px solid #333;
@@ -60,13 +64,18 @@
   background: url('../images/bg-local.png');
   border-radius:0px;
   border: 0px solid #009de1;
-  padding: 14px;
+  padding: 12px;
 }
 
 /* ------------- header ------------- */
 
 body {
   font-family: Verdana, Arial, sans-serif;
+}
+
+#logo-cl {
+  float:left;
+  margin-right: 10px;
 }
 
 #header {

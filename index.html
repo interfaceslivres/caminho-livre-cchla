@@ -47,6 +47,7 @@
 <body>
     <div class="wrapper">
         <div id="header">
+            <a href="#"><img id="logo-cl" src="images/logo-cl.png"></a>
             <input id="searchBox" placeholder="Buscar por setor, bloco ou sala" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar por setor, bloco ou sala'"><button id="searchMap" type="button" alt="Buscar"><img src="images/search.png"></button>
             <ul id="outros">
                 <a href="#"><li id="collab">Colaboradores</li></a>
@@ -179,7 +180,7 @@
         new L.geoJson(CAs, {
             style: hidden
         }).bindLabel('CAs').addTo(map).bindPopup(CAs_pop, (autopad));
-        new L.geoJson(BlocoO, {
+       /* new L.geoJson(BlocoO, {
             style: hidden
         }).bindLabel('Bloco O').addTo(map).bindPopup(BlocoO_pop, (autopad));
         new L.geoJson(BlocoP, {
@@ -190,7 +191,7 @@
         }).bindLabel('Bloco Q').addTo(map).bindPopup(BlocoQ_pop, (autopad));
         new L.geoJson(BlocoR, {
             style: hidden
-        }).bindLabel('Bloco R').addTo(map).bindPopup(BlocoR_pop, (autopad));
+        }).bindLabel('Bloco R').addTo(map).bindPopup(BlocoR_pop, (autopad)); */
     </script>
 </body>
 </html>
