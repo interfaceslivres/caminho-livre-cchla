@@ -42,6 +42,8 @@
     <!-- JS Padrão do JQuery UI -->
     <script src="js/L.Control.Locate.min.js" charset="utf-8"></script>
     <!-- JS da geolocalização -->
+
+
 </head>
 
 <body>
@@ -50,7 +52,7 @@
             <a href="#"><img id="logo-cl" src="images/logo-cl.png"></a>
             <input id="searchBox" placeholder="Buscar por setor, bloco ou sala" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar por setor, bloco ou sala'"><button id="searchMap" type="button" alt="Buscar"><img src="images/search.png"></button>
             <ul id="outros">
-                <a href="#"><li id="collab">Colaboradores</li></a>
+                <a href="#" onclick="colaborador()"><li id="collab">Colaboradores</li></a>
                 <a href="#"><li id="helper">Gostaria de colaborar?</li></a>
             </div>
 
