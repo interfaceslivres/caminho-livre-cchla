@@ -1,71 +1,45 @@
-* Ambiente dos professores (Sem acessibilidade e sem banheiro acessível)
+* Ambiente dos professores (Sem acessibilidade e sem banheiro acessÃ­vel)
 
-Térreo: 1 - 17
-1º Andar: 18-56
+TÃ©rreo: 01 - 17
+1Âº Andar: 18 - 56
 
-* Ambiente dos professores II (Sem acessibilidade e com banheiro acessível no térreo)
+* Ambiente dos professores II (Sem acessibilidade e com banheiro acessÃ­vel no tÃ©rreo)
 
-Térreo: Salas 57-61
-1º Andar: Salas 62-66
-2º Andar: Salas 67-71
+TÃ©rreo: Salas 57 - 61
+1Âº Andar: Salas 62 - 66
+2Âº Andar: Salas 67 - 71
 
-* CAs (Sem acessibilidade e sem banheiro acessível)
+* CAs (Sem acessibilidade e sem banheiro acessÃ­vel)
 
-CA Letras
-CA Serviço Social
-CA História
-CA Ciências Sociais
-Xerox
-Sala ?
+CA Letras, CA ServiÃ§o Social, CA HistÃ³ria, CA CiÃªncias Sociais, CA Psicologia, Xerox
 
-* Biblioteca Setorial (Sem acessibilidade e com banheiro acessível)
+* Biblioteca Setorial (Sem acessibilidade e com banheiro acessÃ­vel)
 
-Atendimento ao usuário
+Sala de Atendimento ao usuÃ¡rio
 
-* Clínica de Psicologia (Sem acessibilidade e sem banheiro acessível)
+* ClÃ­nica de Psicologia (Sem acessibilidade e sem banheiro acessÃ­vel)
 
-Salas de Atendimento (0-19)
-1 Sala de Uso do Centro
-Escola de Psicologia
-Recepção
-Secretaria
-Coordenação
-Sala de Estagiários
-Sala de Psicólogos
-3 Banheiros
-Copa
-3 Salas de Supervisão
+Salas de Atendimento (0-19), Sala de Uso do Centro, Sala de EstagiÃ¡rios, Sala de PsicÃ³logos, Salas de SupervisÃ£o (01-03).
 
-* Departamento de Psicologia (Sem acessibilidade e sem banheiro acessível)
+Escola de Psicologia.
 
-Programa de Pós Graduação em Psicologia Social
-Biotério
-Laboratório de Percepção, Neurociências e Comportamento
-Laboratório de Neurociência Social
-Laboratório de Psicologia Experimental Animal
-Núcleo de Pesquisa e Desenvolvimento Socio Moral - NPDSM
-Empresa Júnior de Psicologia
-Salas dos Professores
-Núcleo de Estudos PsicoSociais da Exclusão/Inclusão e Direitos Humanos (NEIDH)
+RecepÃ§Ã£o, Secretaria, CoordenaÃ§Ã£o, Copa.
 
-* Bloco IV (Com acessibilidade e sem banheiro acessível)
+* Departamento de Psicologia (Sem acessibilidade e sem banheiro acessÃ­vel)
 
-CHIP 1
-Direção de Centro
-Acessorias
-Departamentos
-Coordenações dos Cursos de Graduação
-Setor de Meios
+Empresa JÃºnior de Psicologia, Salas dos Professores
+
+BiotÃ©rio, LaboratÃ³rio de PercepÃ§Ã£o, NeurociÃªncias e Comportamento, LaboratÃ³rio de NeurociÃªncia Social, LaboratÃ³rio de Psicologia Experimental Animal, Programa de PÃ³s GraduaÃ§Ã£o em Psicologia Social, NÃºcleo de Pesquisa e Desenvolvimento Socio Moral - NPDSM, NÃºcleo de Estudos PsicoSociais da ExclusÃ£o/InclusÃ£o e Direitos Humanos (NEIDH).
+
+* Bloco IV (Com acessibilidade e sem banheiro acessÃ­vel)
+
 Salas 401 a 408
 
-* Bloco V (Com acessibilidade e sem banheiro acessível)
+CHIP 1, DireÃ§Ã£o de Centro, Acessorias, Departamentos, CoordenaÃ§Ãµes dos Cursos de GraduaÃ§Ã£o, Setor de Meios.
 
-Salas 501-516
-Direção de Centro
-Salas de Multimídias A, B e C
-Sala 500
-Arquivo Setorial
-Departamentos
-Laboratório de História
-Coordenação de Curso de Graduação
-Coordenações de Pós-Graduação
+
+* Bloco V (Com acessibilidade e sem banheiro acessÃ­vel)
+
+Salas 500-516, Salas de MultimÃ­dias A, B e C.
+
+DireÃ§Ã£o de Centro, Arquivo Setorial, Departamentos, LaboratÃ³rio de HistÃ³ria, CoordenaÃ§Ã£o de Curso de GraduaÃ§Ã£o, CoordenaÃ§Ãµes de PÃ³s-GraduaÃ§Ã£o
