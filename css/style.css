@@ -293,6 +293,13 @@ body {
 }
 
 
+ .ui-autocomplete {
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
 /*
 .tabs a + div {
   position: absolute;
@@ -323,4 +330,13 @@ body {
   overflow: hidden;
   margin: 0 0 1px 0;
 }
+
+
+ .ui-autocomplete {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
 }
