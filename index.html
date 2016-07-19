@@ -15,6 +15,8 @@
     <!-- CSS Padrão do jquery-ui | Utilizamos o jquery-ui para a função de autocomplete -->
     <link rel="stylesheet" href="css/L.Control.Locate.mapbox.min.css" />
     <!-- Estilo da geolocalização -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- Estilo do JQuery UI -->
     <link href='css/style.css' rel='stylesheet' />
     <!-- Nossa folha de estilos personalizada -->
     <!-- JS -->
@@ -36,21 +38,56 @@
     <!-- JS contendo os edifícios em variáveis para criação deles com GeoJSON e implementação do popup. -->
     <script src='js/navigation.js'></script>
     <!-- JS contendo as informações relacionadas à caixa de pesquisa -->
-    <script src='js/jquery-ui.min.js'></script>
+    <script src='https://code.jquery.com/ui/jquery-ui-git.js'></script>
     <!-- JS Padrão do JQuery UI -->
     <script src="js/L.Control.Locate.min.js" charset="utf-8"></script>
     <!-- JS da geolocalização -->
+
+  <script>
+  $( function() {
+    $( "#dialog-message" ).dialog({
+      autoOpen: false,
+      modal: true,
+      resizable: false,
+      minWidth: 500,
+      minHeight: 500,
+      buttons: {
+        "Gostaria de Colaborar?": function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+  } );
+  function abrirpopup() {
+    $( "#dialog-message" ).dialog( "open" );
+
+  };
+
+  </script>
 
 
 </head>
 
 <body>
+
+<div id="dialog-message" class="poppy" title="Colaboradores">
+  <h4> 
+    - Paulo.<br>
+    - Júlio.<br>
+    - Haroldo.<br>
+
+    - Matheus.<br>
+    - Quem mais?<br>
+  </h4>
+
+</div>
+
     <div class="wrapper">
         <div id="header">
             <a href="#"><img id="logo-cl" src="images/logo-cl.png"></a>
             <input id="searchBox" placeholder="Buscar por setor, bloco ou sala" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar por setor, bloco ou sala'"><button id="searchMap" type="button" alt="Buscar"><img src="images/search.png"></button>
             <ul id="outros">
-                <a href="#" onclick="colaborador()"><li id="collab">Colaboradores</li></a>
+                <a href="#" onclick="abrirpopup()"><li id="collab">Colaboradores</li></a>
                 <a href="#"><li id="helper">Gostaria de colaborar?</li></a>
             </div>
 
