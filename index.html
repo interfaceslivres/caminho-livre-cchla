@@ -44,22 +44,22 @@
     <!-- JS da geolocalização -->
 
   <script>
-  $( function() {
+  $( function() {          $( "form-collab" ).dialog();
     $( "#dialog-message" ).dialog({
       autoOpen: false,
       modal: true,
       resizable: false,
       minWidth: 500,
       minHeight: 500,
-      buttons: {
-        "Gostaria de Colaborar?": function() {
-          $( this ).dialog( "close" );
-        }
-      }
+   
     });
   } );
   function abrirpopup() {
     $( "#dialog-message" ).dialog( "open" );
+
+  };
+  function fecharpopup() {
+    $( "#dialog-message" ).dialog( "close" );
 
   };
 
@@ -70,25 +70,32 @@
 
 <body>
 
-<div id="dialog-message" class="poppy" title="Colaboradores">
-  <h4> 
-    - Paulo.<br>
-    - Júlio.<br>
-    - Haroldo.<br>
-
-    - Matheus.<br>
-    - Quem mais?<br>
-  </h4>
-
+<div id="dialog-message" class="poppy" title="SOBRE">
+ 
+ <p>Loren Ipsun lero lero. Loren Ipsun lero lero. Loren Ipsun lero lero. Loren Ipsun lero lero. Loren Ipsun lero lero. </p>
+ <h4> Colaboradores</h4>
+  <ul> 
+    <li>- Fulano.</li>
+    <li>- Sicrano.</li>
+    <li>- Beltrano.</li>
+    </ul>
+  
+  <h4> Gostaria de colaborar?</h4>
+  <center>
+  <form>
+  <input type="text" name="email" placeholder="Deixe seu email aqui">
+  <input id="colaborar" type="submit" onclick="fecharpopup()">
+  </form>
+  </center>
 </div>
+
 
     <div class="wrapper">
         <div id="header">
             <a href="#"><img id="logo-cl" src="images/logo-cl.png"></a>
             <input id="searchBox" placeholder="Buscar por setor, bloco ou sala" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar por setor, bloco ou sala'"><button id="searchMap" type="button" alt="Buscar"><img src="images/search.png"></button>
             <ul id="outros">
-                <a href="#" onclick="abrirpopup()"><li id="collab">Colaboradores</li></a>
-                <a href="#"><li id="helper">Gostaria de colaborar?</li></a>
+                <a href="#" onclick="abrirpopup()"><li id="collab"><b>?</b></li></a>
             </div>
 
         </div>

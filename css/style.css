@@ -342,11 +342,15 @@ body {
 }
 
 /* Estilos modificados do JQuery UI */
-.ui-dialog-buttonpane .ui-widget-content .ui-helper-clearfix .ui-dialog-buttonset .ui-button .ui-corner-all .ui-widget{
-  border: 1px solid #c5c5c5;
-  background: #0f0;
-  font-weight: normal;
-  color: #454545;
+.ui-widget input[type=submit] {
+  background: #f6f6f6;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 3px 10px;
+}
+
+.ui-widget input[type=submit]:hover {
+  background: #ccc;
 }
 
 .ui-widget-header {
@@ -354,6 +358,8 @@ body {
   background: #007bbe;
   color: #fff;
   font-weight: bold;
+  text-align: center;
+  padding-left:30px;
 }
 
 .ui-widget-content .ui-icon {
@@ -376,3 +382,28 @@ body {
 .ui-button:active .ui-icon {
   background-image: url("image/ui-icons_ffffff_256x240.png");
 }
+
+div#dialog-message {
+  width: 430px !important;
+  margin-left: 20px;
+  font-size: 13px;  
+}
+
+#dialog-message ul {
+  list-style: none;
+}
+
+#dialog-message h4 {
+  font-size: 16px;
+  color:#4B5056;
+  border-bottom: 2px solid #ffcb08;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+  border-width: 0px;
+}
+
+
+/* - Formulario Quer Colaborar - */
