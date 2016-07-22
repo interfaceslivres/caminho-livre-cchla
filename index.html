@@ -70,22 +70,34 @@
 
 <body>
 
-<div id="dialog-message" class="poppy" title="SOBRE">
+<div id="dialog-message" class="poppy" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOBRE">
  
- <p>Loren Ipsun lero lero. Loren Ipsun lero lero. Loren Ipsun lero lero. Loren Ipsun lero lero. Loren Ipsun lero lero. </p>
+ <p>Aqui vai um texto resumindo do que se trata o projeto Interfaces Livres. Loren Ipsun Loren Ipsun </p>
+ <p>Aqui vai um texto resumindo do que se trata o projeto Interfaces Livres. </p>
  <h4> Colaboradores</h4>
-  <ul> 
-    <li>- Fulano.</li>
-    <li>- Sicrano.</li>
-    <li>- Beltrano.</li>
+    <ul class="lista-colunas"> 
+        <li>- Fulano (front-end).</li>
+        <li>- Sicrano (Idealização.</li>
+        <li>- Beltrano (conteúdo).</li>
+        <li>- Siclano (coordenação).</li>
+    </ul>
+    <ul class="lista-colunas"> 
+        <li>- Adalberto (front-end).</li>
+        <li>- Lindemberto (Idealização.</li>
+        <li>- Roberto (conteúdo).</li>
+        <li>- Felizberto (coordenação).</li>
     </ul>
   
-  <h4> Gostaria de colaborar?</h4>
+  <h4>Apoio</h4>
   <center>
-  <form>
-  <input type="text" name="email" placeholder="Deixe seu email aqui">
-  <input id="colaborar" type="submit" onclick="fecharpopup()">
-  </form>
+      <a href="#" alt="Apoio1"><img class="apoio" src="images/pat1.png"></a>
+      <a href="#" alt="Apoio2"><img class="apoios" src="images/pat2.png"></a>
+      <a href="#" alt="Apoio3"><img class="apoios" src="images/pat3.png"></a>
+
+  </center>
+  <h4> Contato</h4>
+  <center>
+  <p>paulohsms[at]gmail.com</p>
   </center>
 </div>
 
@@ -146,9 +158,15 @@
             shadowAnchor: [4, 62],  // the same for the shadow
             popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
         });
+
+        /* PANNELLUM
+
         //Isso é um teste do PANNELLUM - Virtual Tour 360º
         var reitoriaicon = L.marker([-7.140923908714983, -34.85083222389221], {icon: iconePano}).addTo(map);
         reitoriaicon.bindPopup('<iframe width="700" height="400" allowfullscreen style="border-style:none;" src="http://localhost/pannellum/pannellum.htm?panorama=http://localhost/pannellum/pano2.jpg&amp;title=Montanha&amp;preview=http://localhost/pannellum/panopreview.jpg"></iframe>');
+
+        */
+
         //Estilo para autopadding dos popups
         var autopad = {
                 autoPanPaddingBottomRight: [50, 50],

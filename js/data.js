@@ -9,7 +9,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 10
+    height: 5
     },
       geometry: {
         type: "Polygon",
@@ -76,7 +76,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 15
+    height: 9
     },
       geometry: {
         type: "Polygon",
@@ -98,7 +98,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 10
+    height: 5
     },
       geometry: {
         type: "Polygon",
@@ -328,7 +328,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 12
+    height: 5
     },
       geometry: {
         type: "Polygon",
@@ -382,7 +382,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 12
+    height: 5
     },
       geometry: {
         type: "Polygon",
@@ -460,7 +460,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 12
+    height: 5
     },
       geometry: {
         type: "Polygon",
@@ -668,7 +668,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 12
+    height: 9
     },
       geometry: {
         type: "Polygon",
@@ -706,7 +706,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 12
+    height: 5
     },
       geometry: {
         type: "Polygon",
@@ -744,7 +744,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 12
+    height: 9
     },
       geometry: {
         type: "Polygon",
@@ -781,7 +781,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 12
+    height: 5
     },
       geometry: {
         type: "Polygon",
@@ -855,7 +855,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 12
+    height: 5
     },
       geometry: {
         type: "Polygon",
@@ -909,7 +909,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 12
+    height: 7
     },
       geometry: {
         type: "Polygon",
@@ -946,7 +946,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 12
+    height: 5
     },
       geometry: {
         type: "Polygon",
@@ -999,7 +999,7 @@ var data = {
       properties: {
     wallColor: "rgba(0,123,190,1.5)",
     roofColor: "rgba(0,157,255,1.5)",
-    height: 10
+    height: 9
     },
       geometry: {
         type: "Polygon",

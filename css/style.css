@@ -75,7 +75,7 @@ body {
 
 #logo-cl {
   float:left;
-  margin-right: 10px;
+  margin-right: 2px;
 }
 
 #header {
@@ -84,7 +84,7 @@ body {
 	position:absolute;
 	z-index:10;
 	margin:20px 10px;
-  width: 97%;
+  width: 90%;
 }
 
 #content {
@@ -95,7 +95,7 @@ body {
 #searchBox { 
   outline:none;
   height: 26px;
-  width: 200px;
+  width: 60%;
   border-radius: 4px 0px 0px 4px;
   border-top:1px solid #669;
   border-left:1px solid #669;
@@ -164,6 +164,9 @@ body {
   margin-top:0px;
   padding-left:0px;
   padding-bottom: 0px;
+  position: absolute;
+  top: 155px;
+  left: 1px
 }
 
 #outros li {
@@ -405,5 +408,35 @@ div#dialog-message {
   border-width: 0px;
 }
 
+.lista-colunas {
+  float:left;
+  width:200px;
+  margin:10px;
+}
 
-/* - Formulario Quer Colaborar - */
+.apoio {
+  border: 0px;
+  height: 200px;
+}
+
+.apoios {
+  border: 0px;
+  height: 100px;
+}
+
+/* Mapa */
+
+.wrapper {
+  overflow: hidden;
+}
+
+/* - MQueries - */
+
+@media screen and (min-width: 768px) {
+  
+#searchBox {
+  width: 200px;
+}
+
+
+}
