@@ -1,6 +1,6 @@
 /* --------------- Popups ----------------- */
 
-.poppy{clear:both;width:500px;height:500px;float:left;overflow:hidden;}
+.poppy{clear:both;width:220px;height:auto;float:left;overflow:hidden;}
 
 .poppy-wrap{float:left;width:100%;position:relative;right:50%;}
 
@@ -10,7 +10,7 @@
 
 .poppy h2 {  color:#fff; text-transform:uppercase; text-align:center; background: #007bbe; padding: 10px; margin-bottom:20px; border-radius: 4px;}
 
-.poppy img{float:left;width:50%}
+.poppy img{float:left; /* width:50% */}
 
 .poppy p,.poppylarge p{margin:0 0 5px!important;line-height:160%!Important;font-size:120%!Important}
 
@@ -410,18 +410,25 @@ div#dialog-message {
 
 .lista-colunas {
   float:left;
-  width:200px;
+  width:50%;
   margin:10px;
+  font-size: 20px;
 }
 
-.apoio {
-  border: 0px;
-  height: 200px;
+.lista-colunas li {
+  font-size: 14px;
+  padding-right: 2px;
 }
 
-.apoios {
+
+*:focus {
+  outline: none;
+}
+
+.apoios img {
   border: 0px;
-  height: 100px;
+  height: 50px;
+  padding: 5px 0px 10px 59px;
 }
 
 /* Mapa */
@@ -432,11 +439,39 @@ div#dialog-message {
 
 /* - MQueries - */
 
+
+/* FULL SCREEN */
 @media screen and (min-width: 768px) {
   
 #searchBox {
   width: 200px;
 }
 
+.poppy {
+  width: 500px;
+  height: 500px;
+}
 
+#header {
+  width: 300px;
+}
+
+}
+
+/* TABLET */
+@media screen and (max-width: 767px) and (min-width: 520px) {
+
+.poppy {
+  width: 350px;
+  height: 500px;
+}
+
+#header {
+  width: 300px;
+}
+
+}
+
+#dialog-message {
+  width: 500px;
 }
