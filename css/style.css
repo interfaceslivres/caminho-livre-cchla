@@ -164,11 +164,10 @@ body {
   border:1px solid #669;
   list-style: none;
   margin-top:0px;
-  padding-left:0px;
-  padding-bottom: 0px;
+  padding: 1px;
   position: absolute;
-  top: 255px;
-  left: 1px
+  top: 165px;
+  left: 2px;
 }
 
 #outros li {
@@ -389,9 +388,12 @@ body {
 }
 
 div#dialog-message {
-  width: 430px !important;
-  margin-left: 20px;
-  font-size: 13px;  
+  width: 100%;
+  font-size: 13px; 
+  background: #fff;
+  border-radius: 5px;
+  height: auto;
+  padding: 15px;
 }
 
 #dialog-message ul {
@@ -458,6 +460,21 @@ div#dialog-message {
   width: 300px;
 }
 
+#outros {
+  background: #009de1;
+  font-size: 12px;
+  border-radius: 4px;
+  float:right;
+  border:1px solid #669;
+  list-style: none;
+  margin-top:0px;
+  padding-left:0px;
+  padding-bottom: 0px;
+  position: absolute;
+  top: 155px;
+  left: 1px;
+}
+
 }
 
 /* TABLET */
@@ -474,6 +491,7 @@ div#dialog-message {
 
 }
 
-#dialog-message {
-  width: 500px;
+#conteudo-collab {
+  width: 80%;
+  margin: 0 auto;
 }

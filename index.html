@@ -44,72 +44,16 @@
     <script src="js/L.Control.Locate.min.js" charset="utf-8"></script>
     <!-- JS da geolocalização -->
 
-  <script>
-  $( function() {          $( "form-collab" ).dialog();
-    $( "#dialog-message" ).dialog({
-      autoOpen: false,
-      modal: true,
-      resizable: false,
-      minWidth: 500,
-      minHeight: 500,
-   
-    });
-  } );
-  function abrirpopup() {
-    $( "#dialog-message" ).dialog( "open" );
-
-  };
-  function fecharpopup() {
-    $( "#dialog-message" ).dialog( "close" );
-
-  };
-
-  </script>
-
 
 </head>
 
 <body>
-
-<div id="dialog-message" class="poppy" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOBRE">
- 
- <br><p>Caminho Livre CCHLA/UFPB é um projeto do <a href="https://github.com/interfaceslivres" alt="Interfaces Livres">Interfaces Livres</a> que propõe-se a mapear o Campus.</p>
-
- <h4> Colaboradores</h4>
-    <ul class="lista-colunas"> 
-        <li>- Haroldo Carvalho (Front-end)</li>
-        <li>- Júlio Ximenes (Front-end)</li>
-        <li>- Matheus Beltrão (Conteúdo)</li>
-        <li>- Marina Lauritzen (Pesquisa)</li>
-    </ul>
-    <ul class="lista-colunas"> 
-        
-        <li>- Edson (Conteúdo)</li>
-        <li>- Layse Julyanne (Idealização)</li>
-        <li>- Paulo Henrique (Coordenação)</li>
-    </ul>
-  
-  <h4>Apoio</h4>
-  <center>
-  <div class="apoios">
-      <a href="https://github.com/interfaceslivres" alt="Interfaces Livres"><img src="images/pat2.png"></a>
-      <a href="http://www.cchla.ufpb.br" alt="CCHLA"><img src="images/pat3.png"></a>
-      <a href="http://www.ufpb.br" alt="UFPB"><img src="images/pat1.png"></a>
-    </div>
-  </center>
-  <h4> Contato</h4>
-  <center>
-  <p>paulohsms[at]gmail.com</p>
-  </center>
-</div>
-
-
     <div class="wrapper">
         <div id="header">
             <a href="#"><img id="logo-cl" src="images/logo-cl.png"></a>
             <input id="searchBox" placeholder="Buscar por setor, bloco ou sala" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar por setor, bloco ou sala'"><button id="searchMap" type="button" alt="Buscar"><img src="images/search.png"></button>
             <ul id="outros">
-                <a href="#" onclick="abrirpopup()"><li id="collab"><b>?</b></li></a>
+                <a href="collab.html"><li id="collab"><b>?</b></li></a>
             </div>
 
         </div>
