@@ -29,10 +29,10 @@ var notFound_pop = '<div class=poppy> <ul class=tabs> <h2>Local não encontrado<
 
 function locationHash() {
 		  event.preventDefault();
-		  console.log("pegou");
+		  //console.log("pegou");
 		  var link = $(event.target).attr("href") + " div";
 		  var focus = $(event.target).attr("href") + " a";
-		  console.log(focus);
+		  //console.log(focus);
 		 // document.location.hash = "btn_"+(link);
 
             $(".tabs li div").removeClass('selected');
