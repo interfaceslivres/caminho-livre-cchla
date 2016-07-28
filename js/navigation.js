@@ -7,6 +7,9 @@ $(document).ready(function () {
 //Local
             "Ambiente dos Professores II", "Bloco V", "Praça da Alegria", "Bloco IV", "Bloco de Psicologia", "Bloco C", "Auditórios", "Bloco A", "DEMID", "Biblioteca Setorial", "Clínica de Psicologia", "CAs",
             "CA de Letras", "CA de Serviço Social", "CA de História", "CA de Ciências Sociais", "CA de Psicologia", "CAs - Xerox", 
+//DEMID
+            "Laboratório de PCS", "Laboratório de MACS I e II", "Estúdio de Vídeo", "Estúdio de Áudio", "Coordenação", "Administração", "Copa", "Empresa Júnior", "Almoxarifado",
+
 //Salas
             "Ambiente 58 - Ambiente 71",
             "DEMID - Sala 1", "DEMID - Sala 2", 
@@ -89,7 +92,7 @@ $(document).ready(function () {
                     icon: transmarker
                 }).addTo(map).bindPopup(BlocoA_pop).openPopup();
             }
-            else if (local == "demid" || local == "demid - sala 1" || local == "demid - sala 2") {
+            else if (local == "demid" || local == "demid - sala 1" || local == "demid - sala 2" || local == "laboratório de pcs" || local == "laboratório de macs i e ii" || local == "estúdio de vídeo" || local == "estúdio de áudio" || local == "coordenação" || local == "administração" || local == "copa" || local == "empresa júnior" || local == "almoxarifado") {
                 map.setView([-7.136307038206137, -34.84924435615539], 19);
                 L.marker([-7.136307038206137, -34.84924435615539], {
                     icon: transmarker

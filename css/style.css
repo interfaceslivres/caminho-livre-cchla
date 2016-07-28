@@ -255,7 +255,15 @@ body {
   text-decoration: none;
   color: #4B5056;
   transition: background 0.2s ease;
-    border-radius: 4px 4px 0px 0px;
+  border-radius: 4px;
+  width: 220px;
+  float: left;
+  text-align: center;
+}
+
+ a.onFocus {
+  border-radius: 4px 4px 0px 0px !important;
+  background: #ffcb08 !important;
 }
 
 .tabs li a:hover {
@@ -274,14 +282,15 @@ body {
 
 .selected {
   display: block!important;
-  position: absolute;
-  left: 0;
+ // position: absolute;
+ // left: 0;
   font-size: 12px;
   overflow: visible;
   padding: 10px;
   background: #eeeeee ;
-  border-radius: 0 4px 4px 4px;
-  width:100%;
+  border-radius: 0px 0px 4px 4px;
+  width:220px;
+  float: left;
   /* transition: display 0.5s ease; */
 }
 
@@ -453,7 +462,14 @@ div#dialog-message {
 
 .poppy {
   width: 500px;
-  height: 500px;
+  height: auto;
+}
+
+.selected {
+  width: 500px;
+}
+.tabs li a {
+  width: 500px;
 }
 
 #header {
@@ -482,7 +498,16 @@ div#dialog-message {
 
 .poppy {
   width: 350px;
-  height: 500px;
+  height: auto;
+}
+
+
+.tabs li a {
+  width: 350px;
+}
+
+.selected {
+  width: 350px;
 }
 
 #header {
@@ -494,4 +519,13 @@ div#dialog-message {
 #conteudo-collab {
   width: 80%;
   margin: 0 auto;
+}
+
+/* TELINHA */
+@media screen and (max-width: 480px) {
+
+#searchBox {
+  width: 150px;
+}
+
 }
