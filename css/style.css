@@ -37,10 +37,21 @@
 	overflow-y: auto;
 	overflow-x: hidden;
 	width: auto!important;
-  border: none;
   box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.25);
 	border-radius: 4px;
 }
+
+.leaflet-popup-content-wrapper::after {
+    content:"";
+    width:66px;
+    height: 32px;
+    display: inline-block;
+    position:relative;
+    left:155px;
+    float:left;
+    margin-left:-66px;
+    background: url(image/ponta.png);
+  }
 
 /* ------------- mapa ------------------------- */
 
@@ -97,7 +108,6 @@ body {
 #searchBox { 
   outline:none;
   height: 26px;
-  width: 60%;
   border-radius: 4px 0px 0px 4px;
   border-top:1px solid #669;
   border-left:1px solid #669;
@@ -312,6 +322,10 @@ body {
     overflow-x: hidden;
   }
 
+#voltar:hover {
+  background: #03689f;
+  text-decoration: none;
+}
 
 /*
 .tabs a + div {
@@ -397,7 +411,7 @@ body {
 }
 
 div#dialog-message {
-  width: 100%;
+  width: 90%;
   font-size: 13px; 
   background: #fff;
   border-radius: 5px;
@@ -438,10 +452,19 @@ div#dialog-message {
   outline: none;
 }
 
+.apoios {
+  width: 180px;
+}
+
 .apoios img {
   border: 0px;
   height: 50px;
-  padding: 5px 0px 10px 59px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.leaflet-label-right {
+  display: none;
 }
 
 /* Mapa */
@@ -456,6 +479,10 @@ div#dialog-message {
 /* FULL SCREEN */
 @media screen and (min-width: 768px) {
   
+.leaflet-label-right {
+  display: block;
+}
+
 #searchBox {
   width: 200px;
 }
@@ -464,6 +491,10 @@ div#dialog-message {
   width: 500px;
   height: auto;
 }
+
+.leaflet-popup-content-wrapper::after {
+    left:296px;
+  }
 
 .selected {
   width: 500px;
@@ -501,6 +532,9 @@ div#dialog-message {
   height: auto;
 }
 
+.leaflet-popup-content-wrapper::after {
+    left:220px;
+  }
 
 .tabs li a {
   width: 350px;
@@ -525,7 +559,7 @@ div#dialog-message {
 @media screen and (max-width: 480px) {
 
 #searchBox {
-  width: 150px;
+  width: 160px;
 }
 
 }

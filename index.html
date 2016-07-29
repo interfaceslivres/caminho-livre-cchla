@@ -71,8 +71,8 @@
             "fillColor": "#ffffff"
         };
         //Coordenadas salvas em uma variável para limitar a área de visualização do mapa
-        var southWest = L.latLng(-7.141, -34.8513),
-            northEast = L.latLng(-7.125, -34.85),
+        var southWest = L.latLng(-7.144, -34.857),
+            northEast = L.latLng(-7.134, -34.845),
             bounds = L.latLngBounds(southWest, northEast);
         //Inicialização do mapa e limitando a área de visualização do mapa com a variável bounds
         L.mapbox.accessToken = 'pk.eyJ1IjoiMTJoYXZlbnNsYXYiLCJhIjoiY2lrcXUzajI4MDA5cHZlbTNoOGs4cHk1byJ9.YKesU01czArkvWBSXzj1iA';
@@ -81,7 +81,7 @@
                 maxZoom: 19,
                 minZoom: 17
             })
-            .setView([-7.1402, -34.8505], 18);
+            .setView([-7.1395, -34.8507], 18);
         // Código para utilização das tiles do Mapbox
         // (new L.TileLayer('http://otile4.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', { MAPBOX http://tile.openstreetmap.org/zoom/x/y.png
         //    (new L.TileLayer('http://tile.openstreetmap.org/zoom/{x}/{y}.png', {
