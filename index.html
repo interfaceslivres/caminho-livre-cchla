@@ -72,7 +72,7 @@
         };
         //Coordenadas salvas em uma variável para limitar a área de visualização do mapa
         var southWest = L.latLng(-7.144, -34.857),
-            northEast = L.latLng(-7.134, -34.845),
+            northEast = L.latLng(-7.131, -34.845),
             bounds = L.latLngBounds(southWest, northEast);
         //Inicialização do mapa e limitando a área de visualização do mapa com a variável bounds
         L.mapbox.accessToken = 'pk.eyJ1IjoiMTJoYXZlbnNsYXYiLCJhIjoiY2lrcXUzajI4MDA5cHZlbTNoOGs4cHk1byJ9.YKesU01czArkvWBSXzj1iA';
@@ -114,16 +114,30 @@
         */
 
         //Estilo para autopadding dos popups
-        var autopad = {
-                autoPanPaddingBottomRight: [50, 50],
-                autoPanPaddingTopLeft: [50, 120]
+    
+
+            var autopad = autopadd();
+
+            function autopadd() {
+                if ($(window).width() < 400) {
+               var y = {     
+                autoPanPaddingTopLeft: [60, 80],
+                maxHeight: 380
+                };
+                return y;
+            } else { 
+                 var y = {autoPanPaddingTopLeft: [60, 80]}
+                 return y;
             }
+            };
+
         //Adicionar os marcadores transparentes. Eles servem para a função de pesquisa.
         var transIcon = L.Icon.extend({});
         var transmarker = new transIcon({
             iconUrl: 'images/trans.png'
         });
         //Adicionar os edifícios salvos em variáveis no data2.js através do GeoJSON. Cada edifício tem uma variável diferente e, graças a isso, abrirá um popup diferente que está definido no popups.js
+
 
         new L.geoJson(Ambiente2, {
             style: hidden
