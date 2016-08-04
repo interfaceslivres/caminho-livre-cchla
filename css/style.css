@@ -80,6 +80,15 @@
   padding: 12px;
 }
 
+
+/* ---- Panellum ---- */
+
+#frame {
+  width: 220px;
+  height: 220px;
+}
+
+
 /* ------------- header ------------- */
 
 body {
@@ -492,6 +501,11 @@ div#dialog-message {
   height: auto;
 }
 
+#frame {
+  width: 500px;
+  height: 500px;
+}
+
 .leaflet-popup-content-wrapper::after {
     left:296px;
   }
@@ -530,6 +544,11 @@ div#dialog-message {
 .poppy {
   width: 350px;
   height: auto;
+}
+
+#frame {
+  width: 350px;
+  height: 350px;
 }
 
 .leaflet-popup-content-wrapper::after {
