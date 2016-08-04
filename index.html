@@ -114,18 +114,18 @@
         */
 
         //Estilo para autopadding dos popups
-    
+
 
             var autopad = autopadd();
 
             function autopadd() {
                 if ($(window).width() < 400) {
-               var y = {     
+               var y = {
                 autoPanPaddingTopLeft: [60, 80],
                 maxHeight: 380
                 };
                 return y;
-            } else { 
+            } else {
                  var y = {autoPanPaddingTopLeft: [60, 80]}
                  return y;
             }
@@ -136,84 +136,117 @@
         var transmarker = new transIcon({
             iconUrl: 'images/trans.png'
         });
-        //Adicionar os edifícios salvos em variáveis no data2.js através do GeoJSON. Cada edifício tem uma variável diferente e, graças a isso, abrirá um popup diferente que está definido no popups.js
+        /* Adicionar os edifícios salvos em variáveis no data2.js através do GeoJSON.
+           Cada edifício tem uma variável diferente e, graças a isso, abrirá um popup
+           diferente que está definido no popups.js */
+        // Estrutura do Array: Id JSON - Nome da Label
+        // Variáveis do New GeoJSON:
+        var predios = [
+            [
+              'Ambiente2',
+              'Ambiente dos Professores II'
+            ],
+            [
+              'DEMID',
+              'DEMID - Departamento de Mídias Digitais'
+            ],
+            [
+              'BlocoV',
+              'Bloco V'
+            ],
+            [
+              'Praca',
+              'Ambiente dos Professores / Praça da Alegria'
+            ],
+            [
+              'BlocoIV',
+              'Bloco IV'
+            ],
+            [
+              'BlocoPsico',
+              'Bloco de Psicologia'
+            ],
+            [
+              'BlocoC',
+              'Bloco C'
+            ],
+            [
+              'Auditorios',
+              'Auditórios 411 e 412'
+            ],
+            [
+              'BlocoA',
+              'Bloco A'
+            ],
+            [
+              'BibliotecaSetorial',
+              'Biblioteca Setorial'
+            ],
+            [
+              'ClinicaPsicologia',
+              'Clínica de Psicologia'
+            ],
+            [
+              'CAs',
+              'CAs'
+            ]
+        ];
 
 
-        new L.geoJson(Ambiente2, {
-            style: hidden
-        }).bindLabel('Ambiente dos Professores II').addTo(map).bindPopup(Ambiente2_pop, (autopad));
-    /*    new L.geoJson(CCSABloco1, {
-            style: hidden
-        }).bindLabel('CCSA - Bloco 1').addTo(map).bindPopup(CCSABloco1_pop, (autopad));
-        new L.geoJson(CCSABloco2, {
-            style: hidden
-        }).bindLabel('CCSA - Bloco 2').addTo(map).bindPopup(CCSABloco2_pop, (autopad)); */
-        new L.geoJson(DEMID, {
-            style: hidden
-        }).bindLabel('DEMID - Departamento de Mídias Digitais').addTo(map).bindPopup(DEMID_pop, (autopad));
-    /*    new L.geoJson(CEBloco1, {
-            style: hidden
-        }).bindLabel('CE - Bloco 1').addTo(map).bindPopup(CEBloco1_pop, (autopad));
-        new L.geoJson(CEBloco2, {
-            style: hidden
-        }).bindLabel('CE - Bloco 2').addTo(map).bindPopup(CEBloco2_pop, (autopad));
-        new L.geoJson(CEBloco3, {
-            style: hidden
-        }).bindLabel('CE - Bloco 3').addTo(map).bindPopup(CEBloco3_pop, (autopad)); */
-        new L.geoJson(BlocoV, {
-            style: hidden
-        }).bindLabel('Bloco V').addTo(map).bindPopup(BlocoV_pop, (autopad));
-        new L.geoJson(Praca, {
-            style: hidden
-        }).bindLabel('Ambiente dos Professores / Praça da Alegria').addTo(map).bindPopup(Praca_pop, (autopad));
-        new L.geoJson(BlocoIV, {
-            style: hidden
-        }).bindLabel('Bloco IV').addTo(map).bindPopup(BlocoIV_pop, (autopad));
-        /* new L.geoJson(BlocoD, {
-            style: hidden
-        }).bindLabel('Bloco D').addTo(map).bindPopup(BlocoD_pop, (autopad)); */
-        new L.geoJson(BlocoPsico, {
-            style: hidden
-        }).bindLabel('Bloco de Psicologia').addTo(map).bindPopup(BlocoPsico_pop, (autopad));
-        new L.geoJson(BlocoC, {
-            style: hidden
-        }).bindLabel('Bloco C').addTo(map).bindPopup(BlocoC_pop, (autopad));
-        new L.geoJson(Auditorios, {
-            style: hidden
-        }).bindLabel('Auditórios 411 e 412').addTo(map).bindPopup(Auditorios_pop, (autopad));
-        new L.geoJson(BlocoA, {
-            style: hidden
-        }).bindLabel('Bloco A').addTo(map).bindPopup(BlocoA_pop, (autopad));
-        /* new L.geoJson(BlocoI, { 
-            style: hidden
-        }).bindLabel('Bloco I').addTo(map).bindPopup(BlocoI_pop, (autopad));
-        new L.geoJson(BlocoJ, {
-            style: hidden
-        }).bindLabel('Bloco J').addTo(map).bindPopup(BlocoJ_pop, (autopad));
-        new L.geoJson(BlocoK, {
-            style: hidden
-        }).bindLabel('Bloco K').addTo(map).bindPopup(BlocoK_pop, (autopad)); */
-        new L.geoJson(BibliotecaSetorial, {
-            style: hidden
-        }).bindLabel('Biblioteca Setorial').addTo(map).bindPopup(BibliotecaSetorial_pop, (autopad));
-        new L.geoJson(ClinicaPsicologia, {
-            style: hidden
-        }).bindLabel('Clínica de Psicologia').addTo(map).bindPopup(ClinicaPsicologia_pop, (autopad));
-        new L.geoJson(CAs, {
-            style: hidden
-        }).bindLabel('CAs').addTo(map).bindPopup(CAs_pop, (autopad));
-       /* new L.geoJson(BlocoO, {
-            style: hidden
-        }).bindLabel('Bloco O').addTo(map).bindPopup(BlocoO_pop, (autopad));
-        new L.geoJson(BlocoP, {
-            style: hidden
-        }).bindLabel('Bloco P').addTo(map).bindPopup(BlocoP_pop, (autopad));
-        new L.geoJson(BlocoQ, {
-            style: hidden
-        }).bindLabel('Bloco Q').addTo(map).bindPopup(BlocoQ_pop, (autopad));
-        new L.geoJson(BlocoR, {
-            style: hidden
-        }).bindLabel('Bloco R').addTo(map).bindPopup(BlocoR_pop, (autopad)); */
+        function carregaPredios(item){
+          console.log(item);
+
+          for (var i = 0; i < predios.length; i++) {
+            var id_json = predios[i][0];
+            var label_json = "'"+predios[i][1]+"'";
+            var pop = id_json+"_pop";
+
+            // Insere os prédios.
+                new L.geoJson(eval(id_json), {
+                    style: hidden
+                }).bindLabel(label_json).addTo(map).bindPopup(eval(pop), (autopad));
+
+          }// fim do for
+
+          if(typeof item !== 'undefined'){
+            console.log(predios[item][0]);
+            console.log(predios[item][1]);
+             new L.geoJson(eval(predios[item][0]), {
+                 style: hidden
+             }).bindLabel("'"+predios[item][1]+"'").addTo(map).bindPopup(eval(predios[item][0]+"_pop"), (autopad)).openPopup();
+           } // fim do if
+
+        } // fim da função carregaPredios();
+
+
+
+
+        // alterar a url do hash
+        $(document).ready( function(){
+        	function getParametros() {
+        	  var valores = {};
+        	  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        	  valores[key] = value;
+        	  });
+        	  return valores;
+        	}
+        	var url_local = getParametros()["c"];
+
+          // TENTAR MELHORAR ESSE PROCESSO.
+
+        	if(typeof url_local === 'undefined'){
+            carregaPredios();
+        	} else {
+        		console.log(url_local);
+        		if (url_local == "Ambiente2" ) {
+        			console.log(predios);
+              carregaPredios(0);
+
+        		}
+
+        	}
+        });
+
     </script>
 </body>
 </html>
