@@ -22,7 +22,7 @@
 
 .poppy a:link,.poppylarge a:link{text-decoration:none;font-weight:700}
 
-.poppy a:hover,.poppylarge a:hover{text-decoration:underline}
+.poppy a:hover,.poppylarge a:hover{text-decoration:none}
 
 .poppylarge{width:620px;max-height:320px;padding:0 20px 0 0}
 
@@ -125,6 +125,7 @@ body {
   float:left;
   color: #888;
   padding-left:8px;
+  margin-left: 6px;
 }
 
 ::-webkit-input-placeholder {
@@ -183,25 +184,37 @@ body {
   border:1px solid #669;
   list-style: none;
   margin-top:0px;
-  padding: 1px;
   position: absolute;
-  top: 165px;
+  top: 160px;
   left: 2px;
+  display: inline-block;
+  width: 26px;
+  height: 25px;
+  background: url('../images/bg-sobre.png');
 }
 
-#outros li {
-  display: inline-block;
-  padding: 5px 10px;
-}
 
 #outros a {
   color: #fff;
   text-decoration: none;
 }
 
+.leaflet-top .leaflet-control {
+  top: 6px;
+}
+
+.leaflet-touch .leaflet-bar a {
+  width: 26px;
+  height: 26px;
+}
+
 #helper {
     border-left: 1px solid #669;
     margin-left:-4px;
+}
+
+#collab {
+  width: 4px;
 }
 
 #collab:hover {
@@ -229,6 +242,10 @@ body {
 
 .no-decoration {
 	list-style-type: none;
+}
+
+.int-voltar {
+  background: #ffcb08;
 }
 
 /* ------------- accordion ------------ */
@@ -331,8 +348,19 @@ body {
     overflow-x: hidden;
   }
 
+#voltar {
+  background: #ccc;
+  font-size: 12px;
+  width: 50%;
+  color: #444;
+}
+
 #voltar:hover {
-  background: #03689f;
+  background: #999;
+  text-decoration: none;
+}
+
+#voltar>a:hover {
   text-decoration: none;
 }
 
@@ -493,7 +521,7 @@ div#dialog-message {
 }
 
 #searchBox {
-  width: 200px;
+  width: 194px;
 }
 
 .poppy {
@@ -521,20 +549,7 @@ div#dialog-message {
   width: 300px;
 }
 
-#outros {
-  background: #009de1;
-  font-size: 12px;
-  border-radius: 4px;
-  float:right;
-  border:1px solid #669;
-  list-style: none;
-  margin-top:0px;
-  padding-left:0px;
-  padding-bottom: 0px;
-  position: absolute;
-  top: 155px;
-  left: 1px;
-}
+
 
 }
 
@@ -578,7 +593,7 @@ div#dialog-message {
 @media screen and (max-width: 480px) {
 
 #searchBox {
-  width: 160px;
+  width: 165px;
 }
 
 }
