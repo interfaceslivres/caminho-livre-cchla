@@ -50,10 +50,11 @@
 <body>
     <div class="wrapper">
         <div id="header">
-            <a href="#"><img id="logo-cl" src="images/logo-cl.png"></a>
-            <input id="searchBox" placeholder="Buscar por setor, bloco ou sala" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar por setor, bloco ou sala'"><button id="searchMap" type="button" alt="Buscar"><img src="images/search.png"></button>
-            <ul id="outros">
-                <a href="collab.html"><li id="collab"><b>?</b></li></a>
+            <img id="logo-cl" src="images/logo-cl.png">
+            <input id="searchBox" placeholder="Buscar setor, bloco ou sala." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar por setor, bloco ou sala'"><button id="searchMap" type="button" alt="Buscar"><img src="images/search.png"></button>
+            <a href="collab.html"><div id="outros" class="leaflet-bar-part leaflet-bar-part-single">
+                
+                </div></a>
             </div>
 
         </div>
@@ -105,7 +106,7 @@
             popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
         });
 
-        //* PANNELLUM
+        /* PANNELLUM
 
         //Isso é um teste do PANNELLUM - Virtual Tour 360º
         var reitoriaicon = L.marker([-7.140923908714983, -34.85083222389221], {icon: iconePano}).addTo(map);
@@ -198,7 +199,7 @@
 
           for (var i = 0; i < predios.length; i++) {
             var id_json = predios[i][0];
-            var label_json = "'"+predios[i][1]+"'";
+            var label_json = predios[i][1];
             var pop = id_json+"_pop";
 
             // Insere os prédios.
