@@ -195,23 +195,20 @@
 
 
         function carregaPredios(item){
-          console.log(item);
 
           for (var i = 0; i < predios.length; i++) {
             var id_json = predios[i][0];
             var label_json = predios[i][1];
             var pop = id_json+"_pop";
 
-            // Insere os prédios.
+            // Insere os prédios. A variável: e.popup._source.label._content serve para identificar o popup.
                 new L.geoJson(eval(id_json), {
                     style: hidden
-                }).bindLabel(label_json).addTo(map).bindPopup(eval(pop), (autopad)).on('popupopen', function() { mudarUrl(); });
+                }).bindLabel(label_json).addTo(map).bindPopup(eval(pop), (autopad)).on('popupopen', function(e) { var d = e.popup._source.label._content; mudarUrl(d); });
 
           }// fim do for
 
           if(typeof item !== 'undefined'){
-            console.log(predios[item][0]);
-            console.log(predios[item][1]);
              new L.geoJson(eval(predios[item][0]), {
                  style: hidden
              }).bindLabel("'"+predios[item][1]+"'").addTo(map).bindPopup(eval(predios[item][0]+"_pop"), (autopad)).openPopup();
@@ -219,15 +216,46 @@
 
         } // fim da função carregaPredios();
  
-        // alterar hash no clique do usuário
-        function mudarUrl(){
-            console.log(1)
-        //  window.location.hash = this.id;
-        }
+        // alterar URL no clique do usuário
+        function mudarUrl(d){
+          for (var i = 0; i < predios.length; i++) {
+            if (predios[i][1] === d) {
+                mudaParametro('c', predios[i][0]);
+            }
+          }
+        };
+
+
+        // Alterar parâmetros da URL ao clicar no banner:
+         function getParametro(parametro) {
+                return decodeURIComponent((new RegExp('[?|&]' + parametro + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+              };
+
+              function mudaParametro (param, value) {
+                var urlAtual = window.location.href+'&';
+                var muda = new RegExp('('+param+')=(.*)&', 'g');
+                var novaURL = urlAtual.replace(muda, '$1='+value+'&');
+
+                if (getParametro(param) !== null){
+                  try {
+                    window.history.replaceState('', '', novaURL.slice(0, - 1) );
+                  } catch (e) {
+                    console.log(e);
+                  }
+                } else {
+                  var currURL = window.location.href;
+                  if (currURL.indexOf("?") !== -1){
+                    window.history.replaceState('', '', urlAtual.slice(0, - 1) + '&' + param + '=' + value);
+                  } else {
+                    window.history.replaceState('', '', urlAtual.slice(0, - 1) + '?' + param + '=' + value);
+                  }
+                }
+              };
+
+
 
         // carregar o banner por meio da URL
         $(document).ready( function(){
-
 
         	function getParametros() {
         	  var valores = {};
@@ -243,11 +271,12 @@
         	if(typeof url_local === 'undefined'){
             carregaPredios();
         	} else {
-        		console.log(url_local);
-        		if (url_local == "Ambiente2" ) {
-        			console.log(predios);
-              carregaPredios(0);
-        		}
+                for (var i = 0; i < predios.length; i++) {
+                    if (predios[i][0] === url_local) {
+                        var p = predios.indexOf(predios[i])
+                        carregaPredios(p);
+                    }
+                }
 
         	}
         });
