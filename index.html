@@ -204,7 +204,7 @@
             // Insere os prédios.
                 new L.geoJson(eval(id_json), {
                     style: hidden
-                }).bindLabel(label_json).addTo(map).bindPopup(eval(pop), (autopad));
+                }).bindLabel(label_json).addTo(map).bindPopup(eval(pop), (autopad)).on('popupopen', function() { mudarUrl(); });
 
           }// fim do for
 
@@ -217,12 +217,17 @@
            } // fim do if
 
         } // fim da função carregaPredios();
+ 
+        // alterar hash no clique do usuário
+        function mudarUrl(){
+            console.log(1)
+        //  window.location.hash = this.id;
+        }
 
-
-
-
-        // alterar a url do hash
+        // carregar o banner por meio da URL
         $(document).ready( function(){
+
+
         	function getParametros() {
         	  var valores = {};
         	  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -232,7 +237,7 @@
         	}
         	var url_local = getParametros()["c"];
 
-          // TENTAR MELHORAR ESSE PROCESSO.
+          // TENTAR MELHORAR ESSE PROCESSO. for dentro de um if
 
         	if(typeof url_local === 'undefined'){
             carregaPredios();
@@ -241,7 +246,6 @@
         		if (url_local == "Ambiente2" ) {
         			console.log(predios);
               carregaPredios(0);
-
         		}
 
         	}
