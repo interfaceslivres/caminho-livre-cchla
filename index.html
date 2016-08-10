@@ -53,7 +53,7 @@
             <img id="logo-cl" src="images/logo-cl.png">
             <input id="searchBox" placeholder="Buscar setor, bloco ou sala." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar por setor, bloco ou sala'"><button id="searchMap" type="button" alt="Buscar"><img src="images/search.png"></button>
             <a href="collab.html"><div id="outros" class="leaflet-bar-part leaflet-bar-part-single">
-                
+
                 </div></a>
             </div>
 
@@ -207,15 +207,14 @@
                 }).bindLabel(label_json).addTo(map).bindPopup(eval(pop), (autopad)).on('popupopen', function(e) { var d = e.popup._source.label._content; mudarUrl(d); });
 
           }// fim do for
-
           if(typeof item !== 'undefined'){
              new L.geoJson(eval(predios[item][0]), {
                  style: hidden
              }).bindLabel("'"+predios[item][1]+"'").addTo(map).bindPopup(eval(predios[item][0]+"_pop"), (autopad)).openPopup();
            } // fim do if
 
-        } // fim da função carregaPredios();
- 
+        }; // fim da função carregaPredios();
+
         // alterar URL no clique do usuário
         function mudarUrl(d){
           for (var i = 0; i < predios.length; i++) {
