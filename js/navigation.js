@@ -3,11 +3,7 @@
           var buscas = [
               [
                 'Ambiente 2',
-                'ambiente dos professores ii',
-                'ambiente 58 - ambiente 71',
-                'ambiente 58',
-                'ambiente 59',
-                'ambiente 60'
+                'Ambiente dos Professores II', 'Ambiente 58 - Ambiente 71', 'Ambiente 68'
               ],
               [
                 'DEMID',
