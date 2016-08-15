@@ -19,7 +19,7 @@
               ],
               [
                 'Bloco IV',
-                'Sala 402 - Sala 408',
+                'Sala 402 - Sala 408', 'Direção do Centro', 'CHIP I'
               ],
               [
                 'Bloco de Psicologia',
@@ -35,7 +35,7 @@
               ],
               [
                 'Bloco A',
-                'Sala 417 - Sala 425', 'T417', 'T418', 'T419'
+                'Sala 417 - Sala 425', 'T417', 'T418', 'T419', 'Coordenação da LEA', 'Coordenação de Tradução'
               ],
               [
                 'Biblioteca Setorial',
@@ -43,7 +43,7 @@
               ],
               [
                 'Clínica de Psicologia',
-                'Salas de Atendimento 0 - 19',
+                'Salas de Atendimento 0 - 19', 'Sala do Centro', 'Sala de Estagiários', 'Sala de Psicólogos', 'Salas de Supervisão 1-3', 'Escola de Psicologia'
               ],
               [
                 'CAs',
