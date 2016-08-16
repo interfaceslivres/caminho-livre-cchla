@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href='css/style.css' rel='stylesheet' />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js'></script>
+    <script src='js/email.js'></script>
     <style>
     body { background: #009de1; }
     </style>
@@ -50,7 +54,41 @@
 <!--Testes de email -->
 
 
-<!-- www.123contactform.com script begins here -->
+//Form
+<form id="contact" name="contact" method="post">  
+  <fieldset>  
+    <label for="name" id="name">Name<span class="required">*</span></label>
+    <input type="text" name="name" id="name" size="30" value="" required/>
+
+    <label for="email" id="email">Email<span class="required">*</span></label>
+    <input type="text" name="email" id="email" size="30" value="" required/>
+
+    <label for="phone" id="phone">Phone</label>
+    <input type="text" name="phone" id="phone" size="30" value="" />
+
+    <label for="Message" id="message">Message<span class="required">*</span></label>
+    <textarea name="message" id="message" required></textarea>
+
+    <label for="Captcha" id="captcha">Name the small house pet that says "<i>meow</i>"<span class="required">*</span></label>
+    <input type="text" name="captcha" value="" required/>
+
+    <input id="submit" type="submit" name="submit" value="Send" />  
+  </fieldset>  
+</form>
+
+<div id="success">
+  <span>
+    <p>Your message was sent succssfully! I will be in touch as soon as I can.</p>
+  </span>
+</div>
+
+<div id="error">
+  <span>
+    <p>Something went wrong, try refreshing and submitting the form again.</p>
+  </span>
+</div>
+
+<!-- www.123contactform.com script begins here
 
 <script type="text/javascript">var servicedomain="www.123contactform.com"; var frmRef=''; try { frmRef=window.top.location.href; } catch(err) {}; var cfJsHost = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E")); frmRef=encodeURIComponent(frmRef.replace(/(<([^>]+)>)/ig,'')).replace('%26','[%ANDCHAR%]'); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/jsform-2139895.js?ref="+frmRef+"' type='text/javascript'%3E%3C/script%3E")); </script>
 
