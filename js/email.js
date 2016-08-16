@@ -1,5 +1,5 @@
 jQuery.validator.addMethod('answercheck', function (value, element) {
-        return this.optional(element) || /^\bcat\b$/.test(value);
+        return this.optional(element) || /^\b7\b$/.test(value);
     }, "type the correct answer -_-");
 
 // validate contact form

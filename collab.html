@@ -54,37 +54,33 @@
 <!--Testes de email -->
 
 
-//Form
 <form id="contact" name="contact" method="post">  
   <fieldset>  
-    <label for="name" id="name">Name<span class="required">*</span></label>
+    <label for="name" id="name">Nome<span class="required">*</span></label>
     <input type="text" name="name" id="name" size="30" value="" required/>
 
     <label for="email" id="email">Email<span class="required">*</span></label>
     <input type="text" name="email" id="email" size="30" value="" required/>
 
-    <label for="phone" id="phone">Phone</label>
-    <input type="text" name="phone" id="phone" size="30" value="" />
-
-    <label for="Message" id="message">Message<span class="required">*</span></label>
+    <label for="Message" id="message">Mensagem<span class="required">*</span></label>
     <textarea name="message" id="message" required></textarea>
 
-    <label for="Captcha" id="captcha">Name the small house pet that says "<i>meow</i>"<span class="required">*</span></label>
-    <input type="text" name="captcha" value="" required/>
+    <label for="Captcha" id="captcha">4 + 3 =<span class="required">*</span></label>
+    <input type="text" id="captcha" name="captcha" value="" required/>
 
-    <input id="submit" type="submit" name="submit" value="Send" />  
+    <input id="submit" type="submit" name="submit" value="Enviar" />  
   </fieldset>  
 </form>
 
 <div id="success">
   <span>
-    <p>Your message was sent succssfully! I will be in touch as soon as I can.</p>
+    <p>Sua mensagem foi enviada com sucesso!</p>
   </span>
 </div>
 
 <div id="error">
   <span>
-    <p>Something went wrong, try refreshing and submitting the form again.</p>
+    <p>Algo está errado, tente atualizar e enviar novamente.</p>
   </span>
 </div>
 

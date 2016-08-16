@@ -505,6 +505,25 @@ div#dialog-message {
 
 /* Formulario de email */
 
+input#name, input#email, textarea#message, input#captcha {
+  width: 200px;
+  background: #fff;
+  border: #ccc 1px solid;
+}
+
+label#name, label#email, label#message, label#captcha {
+color: #333;
+text-shadow: none;
+  }
+
+input#submit {
+  background: #007bbe;
+  border-radius: 3px;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+}
+
 form {
     margin:0
 }
@@ -557,7 +576,7 @@ form input[type="text"].error, form textarea.error {
 fieldset {
     border:0px;
     margin:0;
-    padding:0
+    padding:0;
 }
 .required {
     color:#e9266d
@@ -579,6 +598,10 @@ fieldset {
 }
 #error span p {
   color:#c0392b;
+}
+
+#contact {
+  width: 100%;
 }
 
 /* Mapa */
