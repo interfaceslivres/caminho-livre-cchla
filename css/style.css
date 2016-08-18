@@ -480,12 +480,17 @@ div#dialog-message {
   float:left;
   width:50%;
   margin:10px;
-  font-size: 20px;
 }
 
 .lista-colunas li {
-  font-size: 14px;
+  font-size: 10px;
   padding-right: 2px;
+  line-height: 1.7;
+}
+
+.lista-colunas li span {
+  color: #aaa;
+  font-style: italic;
 }
 
 *:focus {
@@ -509,8 +514,17 @@ div#dialog-message {
 
 /* Formulario de email */
 
-input#name, input#email, textarea#message, input#captcha {
+input#name, input#email, textarea#message {
   width: 200px;
+  background: #fff;
+  border: #ccc 1px solid;
+  margin-top:5px;
+  height: 25px;
+  padding: 2px 5px;
+}
+
+input#secret {
+  width: 120px;
   background: #fff;
   border: #ccc 1px solid;
   margin-top:5px;
@@ -520,10 +534,10 @@ input#name, input#email, textarea#message, input#captcha {
 
 textarea#message {
   height: 180px;
-  max-width: 230px;
+  max-width: 200px;
 }
 
-label#name, label#email, label#message, label#captcha {
+label#name, label#email, label#message, label#secret {
 color: #333;
 text-shadow: none;
   }
@@ -554,7 +568,9 @@ form label.error {
     line-height:1.2rem;
     font-size:12px;
     line-height:12px;
-    color:#c0392b
+    color:#c0392b;
+    display: block;
+    text-shadow: none;
 }
 form input[type="text"], form textarea {
     margin-bottom:1.25em;
@@ -634,10 +650,19 @@ fieldset {
 @media screen and (min-width: 768px) {
   
 
+.lista-colunas li {
+  font-size: 14px;
+  padding-right: 2px;
+}
+
 /* Formulario de email */
 
-input#name, input#email, textarea#message, input#captcha {
+input#name, input#email, textarea#message {
   width: 500px;
+}
+
+input#secret {
+  width: 120px;
 }
 
 textarea#message {
@@ -645,7 +670,7 @@ textarea#message {
   max-width: 600px;
 }
 
-label#name, label#email, label#message, label#captcha {
+label#name, label#email, label#message, label#secret {
 color: #333;
 text-shadow: none;
   }

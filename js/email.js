@@ -1,6 +1,15 @@
-jQuery.validator.addMethod('answercheck', function (value, element) {
+/* jQuery.validator.addMethod('math', function (value, element) {
         return this.optional(element) || /^\b7\b$/.test(value);
     }, "type the correct answer -_-");
+*/
+/*
+jQuery.validator.addMethod("math", function(value, element, params) {
+  return this.optional(element) || value == params[0] + params[1];
+}, jQuery.validator.format("Please enter the correct value for {0} + {1}"));
+*/
+  $.validator.addMethod("7", function(value) {
+    return value == "7";
+  }, 'Insira a palavra secreta corretamente.');
 
 // validate contact form
 $(function() {
@@ -17,25 +26,20 @@ $(function() {
             message: {
                 required: true
             },
-            answer: {
-                required: true,
-                answercheck: true
-            }
+            secret: "7",
         },
         messages: {
             name: {
-                required: "come on, you have a name don't you?",
-                minlength: "your name must consist of at least 2 characters"
+                required: "Campo obrigatório",
+                minlength: "Seu nome deve possuir ao menos 2 letras."
             },
-            email: {
-                required: "no email, no message"
-            },
+            email: "O e-mail inserido não é válido.",
             message: {
-                required: "um...yea, you have to write something to send this form.",
-                minlength: "thats all? really?"
+                required: "Campo obrigatório.",
+                minlength: "Mensagem muito curta."
             },
-            answer: {
-                required: "sorry, wrong answer!"
+            math: {
+                required: "Insira o resultado correto!"
             }
         },
         submitHandler: function(form) {
