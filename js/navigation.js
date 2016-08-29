@@ -94,7 +94,7 @@
                     var p = buscas.indexOf(buscas[i]);
                     new L.geoJson(eval(predios[p][0]), {
                      style: hidden
-                   }).bindLabel("'"+predios[p][1]+"'").addTo(map).bindPopup(eval(predios[p][0]+"_pop"), (autopad)).on("popupopen", function(e) { var d = e.popup._source.label._content; mudarUrl(eval(d)); }).openPopup();
+                   }).bindLabel(predios[p][1]).addTo(map).bindPopup(eval(predios[p][0]+"_pop"), (autopad)).on("popupopen", function(e) { var d = e.popup._source.label._content; mudarUrl(eval(d)); }).openPopup();
                   }
                 }; // fim do 2º for
               }; // fim do 1º for

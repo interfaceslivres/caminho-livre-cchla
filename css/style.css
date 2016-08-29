@@ -498,7 +498,8 @@ div#dialog-message {
 }
 
 .apoios {
-  width: 180px;
+  width: 140px;
+  padding-bottom: 40px;
 }
 
 .apoios img {
@@ -649,6 +650,10 @@ fieldset {
 /* FULL SCREEN */
 @media screen and (min-width: 768px) {
   
+.apoios {
+  width: 250px;
+  padding-bottom: 0px;
+}
 
 .lista-colunas li {
   font-size: 14px;
