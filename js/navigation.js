@@ -92,9 +92,10 @@
                   for (var j = 0; j < (buscas[i]).length; j++) {
                     if (local === (buscas[i][j])) {
                       var p = buscas.indexOf(buscas[i]);
+                      var teste = predios[p][1];
                       new L.geoJson(eval(predios[p][0]), {
                        style: hidden
-                     }).bindLabel("'"+predios[p][1]+"'").addTo(map).bindPopup(eval(predios[p][0]+"_pop"), (autopad)).on("popupopen", function(e) { var d = e.popup._source.label._content; mudarUrl(eval(d)); }).openPopup();
+                     }).bindLabel(teste).addTo(map).bindPopup(eval(predios[p][0]+"_pop"), (autopad)).on("popupopen", function(e) { var d = e.popup._source.label._content; mudarUrl(d); }).openPopup();
                     }
                   }; // fim do 2º for
                 }; // fim do 1º for

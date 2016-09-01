@@ -215,13 +215,13 @@
             // Insere os prédios. A variável: e.popup._source.label._content serve para identificar o popup.
                 new L.geoJson(eval(id_json), {
                     style: hidden
-                }).bindLabel("'"+label_json+"'").addTo(map).bindPopup(eval(pop), (autopad)).on('popupopen', function(e) { var d = e.popup._source.label._content; mudarUrl(d); });
+                }).bindLabel(label_json).addTo(map).bindPopup(eval(pop), (autopad)).on('popupopen', function(e) { var d = e.popup._source.label._content; mudarUrl(d); });
 
           }// fim do for
           if(typeof item !== 'undefined'){
              new L.geoJson(eval(predios[item][0]), {
                  style: hidden
-             }).bindLabel("'"+predios[item][1]+"'").addTo(map).bindPopup(eval(predios[item][0]+"_pop"), (autopad)).openPopup();
+             }).bindLabel(predios[item][1]).addTo(map).bindPopup(eval(predios[item][0]+"_pop"), (autopad)).openPopup();
            } // fim do if
 
         }; // fim da função carregaPredios();
