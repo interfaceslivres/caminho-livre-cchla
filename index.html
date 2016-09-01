@@ -122,7 +122,7 @@
 
         //Isso é um teste do PANNELLUM - Virtual Tour 360º
         var reitoriaicon = L.marker([-7.139269201382607, -34.85082417726517], {icon: iconePano}).addTo(map);
-        reitoriaicon.bindPopup('<iframe id="frame" allowfullscreen style="border-style:none;" src="/pannellum/pannellum.htm?panorama=pano6.jpg&amp;title=Entrada Norte&amp;autoLoad=true&amp;preview=/pannellum/panopreview.jpg"></iframe>');
+        reitoriaicon.bindPopup('<iframe id="frame" allowfullscreen style="border-style:none;" src="http://www.cchla.ufpb.br/mapa/pannellum/pannellum.htm?panorama=pano6.jpg&amp;title=Entrada Norte&amp;autoLoad=true&amp;preview=/pannellum/panopreview.jpg"></iframe>');
         //
 
         //Estilo para autopadding dos popups
@@ -215,7 +215,7 @@
             // Insere os prédios. A variável: e.popup._source.label._content serve para identificar o popup.
                 new L.geoJson(eval(id_json), {
                     style: hidden
-                }).bindLabel(label_json).addTo(map).bindPopup(eval(pop), (autopad)).on('popupopen', function(e) { var d = e.popup._source.label._content; mudarUrl(d); });
+                }).bindLabel("'"+label_json+"'").addTo(map).bindPopup(eval(pop), (autopad)).on('popupopen', function(e) { var d = e.popup._source.label._content; mudarUrl(d); });
 
           }// fim do for
           if(typeof item !== 'undefined'){
@@ -261,8 +261,6 @@
                   }
                 }
               };
-
-
 
         // carregar o banner por meio da URL
         $(document).ready( function(){

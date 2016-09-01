@@ -71,7 +71,7 @@
           });
           //Função para quando o botão for clicado, ir até a área do mapa correta e abrir o popup do objeto selecionado
           $( "#searchBox" ).on( "autocompleteselect", function() {
-              setTimeout(function(){  abertura(); }, 1);
+              setTimeout(function(){  abertura(); }, 10);
 
           });
 
@@ -84,20 +84,20 @@
           $("#searchMap").click( function(){
               abertura();
           });
-
+          
           // Abrir o popup ao mesmo tempo que muda a URL chamando a função mudaUrl();
-          function abertura() {
-              var local = (document.getElementById("searchBox").value);
-              for (var i = 0; i < (buscas.length); i++) {
-                for (var j = 0; j < (buscas[i]).length; j++) {
-                  if (local === (buscas[i][j])) {
-                    var p = buscas.indexOf(buscas[i]);
-                    new L.geoJson(eval(predios[p][0]), {
-                     style: hidden
-                   }).bindLabel(predios[p][1]).addTo(map).bindPopup(eval(predios[p][0]+"_pop"), (autopad)).on("popupopen", function(e) { var d = e.popup._source.label._content; mudarUrl(eval(d)); }).openPopup();
-                  }
-                }; // fim do 2º for
-              }; // fim do 1º for
-          }; // fim da função abertura
+            function abertura() {
+                var local = (document.getElementById("searchBox").value);
+                for (var i = 0; i < (buscas.length); i++) {
+                  for (var j = 0; j < (buscas[i]).length; j++) {
+                    if (local === (buscas[i][j])) {
+                      var p = buscas.indexOf(buscas[i]);
+                      new L.geoJson(eval(predios[p][0]), {
+                       style: hidden
+                     }).bindLabel("'"+predios[p][1]+"'").addTo(map).bindPopup(eval(predios[p][0]+"_pop"), (autopad)).on("popupopen", function(e) { var d = e.popup._source.label._content; mudarUrl(eval(d)); }).openPopup();
+                    }
+                  }; // fim do 2º for
+                }; // fim do 1º for
+            }; // fim da função abertura
 
   }); // fim do document.ready
