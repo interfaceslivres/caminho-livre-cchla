@@ -87,6 +87,8 @@
         var southWest = L.latLng(-7.144, -34.857),
             northEast = L.latLng(-7.130, -34.845),
             bounds = L.latLngBounds(southWest, northEast);
+
+/* MAPA PADRAO
         //Inicialização do mapa e limitando a área de visualização do mapa com a variável bounds
         L.mapbox.accessToken = 'pk.eyJ1IjoiMTJoYXZlbnNsYXYiLCJhIjoiY2lrcXUzajI4MDA5cHZlbTNoOGs4cHk1byJ9.YKesU01czArkvWBSXzj1iA';
         var map = L.mapbox.map('map', 'mapbox.streets', {
@@ -100,6 +102,20 @@
         //    (new L.TileLayer('http://tile.openstreetmap.org/zoom/{x}/{y}.png', {
         //    minZoom: 15
        // }, {})).addTo(map);
+*/
+/* MAPA EDITADO */
+        //Inicialização do mapa e limitando a área de visualização do mapa com a variável bounds
+        L.mapbox.accessToken = 'pk.eyJ1IjoiaGFyb2xkb2NjaiIsImEiOiJjaXNrZG50d3YwNGpqMzBwdTB0NmZ3M2V3In0.9wkQG2zhW1VM6Ok_P9v5Mw';
+        var map = L.mapbox.map('map', 'mapbox://styles/haroldoccj/ciskdpnh100dx2xp8p29ael3c', {
+                maxBounds: bounds,
+                maxZoom: 18,
+                minZoom: 17
+            })
+            .setView([-7.1395, -34.8507], 18);
+        // Código para utilização das tiles do Mapbox
+        L.tileLayer('https://api.mapbox.com/styles/v1/haroldoccj/ciskdpnh100dx2xp8p29ael3c/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGFyb2xkb2NjaiIsImEiOiJjaXNrZG50d3YwNGpqMzBwdTB0NmZ3M2V3In0.9wkQG2zhW1VM6Ok_P9v5Mw', {foo: 'bar'}).addTo(map);
+/* FIM DO MAPA EDITADO */
+
         // Adicionar botão de geolocalização
         L.control.locate().addTo(map);
         //Condição para aplicação do OSMBuildings apenas se o tamanho da tela for maior que o especificado
