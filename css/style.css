@@ -687,7 +687,7 @@ text-shadow: none;
 }
 
 #searchBox {
-  width: 194px;
+  width: 190px;
 }
 
 .poppy {
@@ -712,7 +712,7 @@ text-shadow: none;
 }
 
 #header {
-  width: 300px;
+  width: 320px;
 }
 
 
@@ -759,7 +759,7 @@ text-shadow: none;
 @media screen and (max-width: 480px) {
 
 #searchBox {
-  width: 165px;
+  width: 150px;
 }
 
 }
