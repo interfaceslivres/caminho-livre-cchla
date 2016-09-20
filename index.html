@@ -48,7 +48,8 @@
 <!-- MAPBOX -->
 
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.css' rel='stylesheet' />
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.css' rel='stylesheet' />
+
 
 <!-- FIM MAPBOX -->
 
@@ -70,7 +71,7 @@
 <body>
     <div class="wrapper">
         <div id="header">
-            <img id="logo-cl" src="images/logo-cl.png">
+            <img id="logo-cl" src="images/logo-cl.png" alt="Logo Caminho Livre">
             <input id="searchBox" placeholder="Buscar local" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buscar por setor, bloco ou sala'"><button id="searchMap" type="button" alt="Buscar"><img src="images/search.png"></button>
             <a href="collab.html"><div id="outros" class="leaflet-bar-part leaflet-bar-part-single">
 
@@ -82,6 +83,7 @@
             <div id="map" style="overflow: hidden; position: absolute; width: 100%; left: 0; height: 100%;"></div>
         </div>
     </div>
+
     <script>
         //Estilo utilizado para tornar a layer dos edifícios invisível/visível (a layer de edifícios é necessária para que os edifícios sejam clicáveis - isso é referente ao data.js)
         var hidden = {
@@ -96,7 +98,7 @@
             northEast = L.latLng(-7.130, -34.845),
             bounds = L.latLngBounds(southWest, northEast);
 
-/* MAPA PADRAO
+/* MAPA TRADICIONAL 
         //Inicialização do mapa e limitando a área de visualização do mapa com a variável bounds
         L.mapbox.accessToken = 'pk.eyJ1IjoiMTJoYXZlbnNsYXYiLCJhIjoiY2lrcXUzajI4MDA5cHZlbTNoOGs4cHk1byJ9.YKesU01czArkvWBSXzj1iA';
         var map = L.mapbox.map('map', 'mapbox.streets', {
@@ -110,18 +112,18 @@
         //    (new L.TileLayer('http://tile.openstreetmap.org/zoom/{x}/{y}.png', {
         //    minZoom: 15
        // }, {})).addTo(map);
-*/
-/* MAPA EDITADO */
+
+      /* MAPA EDITADO */
         //Inicialização do mapa e limitando a área de visualização do mapa com a variável bounds
         L.mapbox.accessToken = 'pk.eyJ1IjoiaGFyb2xkb2NjaiIsImEiOiJjaXNrZG50d3YwNGpqMzBwdTB0NmZ3M2V3In0.9wkQG2zhW1VM6Ok_P9v5Mw';
-        var map = L.mapbox.map('map', 'mapbox://styles/haroldoccj/ciskdpnh100dx2xp8p29ael3c', {
+        var map = L.mapbox.map('map', 'mapbox.streets', {
                 maxBounds: bounds,
                 maxZoom: 18,
                 minZoom: 17
             })
             .setView([-7.1395, -34.8507], 18);
         // Código para utilização das tiles do Mapbox
-        L.tileLayer('https://api.mapbox.com/styles/v1/haroldoccj/ciskdpnh100dx2xp8p29ael3c/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGFyb2xkb2NjaiIsImEiOiJjaXNrZG50d3YwNGpqMzBwdTB0NmZ3M2V3In0.9wkQG2zhW1VM6Ok_P9v5Mw', {foo: 'bar'}).addTo(map);
+        L.tileLayer('https://api.mapbox.com/styles/v1/haroldoccj/citbj24e4001n2imfhqn2opgb/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGFyb2xkb2NjaiIsImEiOiJjaXNrZG50d3YwNGpqMzBwdTB0NmZ3M2V3In0.9wkQG2zhW1VM6Ok_P9v5Mw', {foo: 'bar'}).addTo(map);
 /* FIM DO MAPA EDITADO */
 
         // Adicionar botão de geolocalização
@@ -314,5 +316,7 @@
         });
 
     </script>
+
+    
 </body>
 </html>
