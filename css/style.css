@@ -53,6 +53,10 @@
     background: url(image/ponta.png);
   }
 
+  .mapbox-logo-true:before {
+display: none;
+  }
+
 /* ------------- mapa ------------------------- */
 
 .leaflet-top {
