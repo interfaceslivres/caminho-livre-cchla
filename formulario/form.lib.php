@@ -7,7 +7,7 @@
 
 define( 'PAYPAL_ID' , '' ); // Put donation ID here to disable the bottom backlink
 
-define( 'PHPFMG_TO' , 'paulohsms@gmail.com' );
+define( 'PHPFMG_TO' , 'teste@gmail.com' );
 define( 'PHPFMG_REDIRECT', '' );
 
 define( 'PHPFMG_ID' , '20160721-a667' );
